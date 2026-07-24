@@ -1,0 +1,174 @@
+champion_id,riot_id,alias,name_en,name_ko,title_en,title_ko,gender,species,region,attack_type,tag_1,tag_2,partype,hp_base,hp_max,mp_base,mp_max,movespeed,armor_base,armor_max,spellblock_base,spellblock_max,attackrange,hpregen_base,hpregen_max,mpregen_base,mpregen_max,crit_base,crit_max,attackdamage_base,attackdamage_max,attackspeed_base,attackspeed_max,image_path
+1,1,Annie,Annie,애니,the Dark Child,어둠의 아이,Female,Human,Noxus,ranged,Mage,Support,Mana,560,2192,418,843,335,23,91,30,52.1,625,5.5,14.85,8,21.6,0,0,50,50,0.61,0.751,1.png
+2,2,Olaf,Olaf,올라프,the Berserker,광전사,Male,Human,Freljord,melee,Fighter,Tank,Mana,645,2668,316,1166,350,35,106.4,32,66.85,125,6.5,16.7,7.5,17.7,0,0,68,68,0.72,1.0505,2.png
+3,3,Galio,Galio,갈리오,the Colossus,위대한 석상,Male,Construct / Golem,Demacia,melee,Tank,Mage,Mana,600,2742,410,1090,340,24,103.9,32,66.85,150,8,21.6,9.5,21.4,0,0,59,59,0.625,0.7844,3.png
+4,4,TwistedFate,Twisted Fate,트위스티드 페이트,the Card Master,카드의 달인,Male,Human,Bilgewater,ranged,Mage,Marksman,Mana,604,2440,333,996,330,24,97.95,30,52.1,525,5.5,15.7,8,21.6,0,0,52,52,0.625,0.8906,4.png
+5,5,XinZhao,Xin Zhao,신 짜오,the Seneschal of Demacia,데마시아의 호위무사,Male,Human,Demacia,melee,Fighter,Tank,Mana,620,2422,274,1209,345,35,109.8,32,66.85,175,8,19.9,7.25,14.9,0,0,63,63,0.645,1.0288,5.png
+6,6,Urgot,Urgot,우르곳,the Dreadnought,살상 병기,Male,Human / Cyborg,Zaun,ranged,Fighter,Tank,Mana,655,2389,340,1105,330,36,121,32,66.85,350,7.5,19.4,7.25,20.85,0,0,63,63,0.625,1.0234,6.png
+7,7,Leblanc,LeBlanc,르블랑,the Deceiver,환술사,Female,Human,Noxus,ranged,Assassin,Mage,Mana,598,2434,400,825,340,22,93.4,30,52.1,525,7.5,16.85,8,21.6,0,0,55,55,0.658,0.9209,7.png
+8,8,Vladimir,Vladimir,블라디미르,the Crimson Reaper,진홍빛 사신,Male,Human,Noxus,ranged,Mage,Fighter,Crimson Rush,600,2470,2,2,330,24,100.5,30,52.1,450,7,17.2,0,0,0,0,55,55,0.658,0.8817,8.png
+9,9,FiddleSticks,Fiddlesticks,피들스틱,the Ancient Fear,오래된 공포,Other,Demon,Runeterra,ranged,Mage,Support,Mana,650,2452,500,976,335,34,113.9,30,52.1,480,5.5,15.7,8,21.6,0,0,55,55,0.625,0.8492,9.png
+10,10,Kayle,Kayle,케일,the Righteous,정의로운 자,Female,Celestial,Demacia,melee,Mage,Marksman,Mana,670,2234,330,1180,335,26,97.4,22,44.1,175,5,13.5,8,21.6,0,0,50,50,0.625,0.7844,10.png
+11,11,MasterYi,Master Yi,마스터 이,the Wuju Bladesman,우주 검사,Male,Human,Ionia,melee,Fighter,Assassin,Mana,640,2425,251,965,355,33,109.5,32,66.85,175,7.5,18.55,7.25,14.9,0,0,65,65,0.679,0.9676,11.png
+12,12,Alistar,Alistar,알리스타,the Minotaur,미노타우로스,Male,Minotaur,Runeterra,melee,Tank,Support,Mana,685,2725,350,1030,330,40,119.9,32,66.85,125,8.5,22.95,8.5,22.1,0,0,62,62,0.625,0.8508,12.png
+13,13,Ryze,Ryze,라이즈,the Rune Mage,룬 마법사,Male,Human,Runeterra,ranged,Mage,,Mana,620,2728,300,1490,340,22,93.4,32,54.1,550,8,21.6,8,25,0,0,55,55,0.658,0.894,13.png
+14,14,Sion,Sion,사이온,The Undead Juggernaut,언데드 학살병기,Male,Undead,Noxus,melee,Tank,Fighter,Mana,655,2134,400,1284,345,36,107.4,32,66.85,175,9,22.6,8,18.2,0,0,68,68,0.679,0.8291,14.png
+15,15,Sivir,Sivir,시비르,the Battle Mistress,전장의 여제,Female,Human,Shurima,ranged,Marksman,,Mana,600,2368,340,1105,335,30,98,30,52.1,500,3.25,12.6,6,19.6,0,0,60,60,0.625,0.795,15.png
+16,16,Soraka,Soraka,소라카,the Starchild,별의 아이,Female,Celestial,Targon,ranged,Support,Mage,Mana,605,2101,425,1105,325,32,117,30,52.1,550,2.5,11.0,11.5,18.3,0,0,50,50,0.625,0.8524,16.png
+17,17,Teemo,Teemo,티모,the Swift Scout,날쌘 정찰병,Male,Yordle,Bandle City,ranged,Marksman,Mage,Mana,615,2383,334,759,330,24,100.5,30,52.1,500,5.5,16.55,9.6,17.25,0,0,54,54,0.69,1.0865,17.png
+18,18,Tristana,Tristana,트리스타나,the Yordle Gunner,요들 사수,Female,Yordle,Bandle City,ranged,Marksman,Assassin,Mana,640,2374,300,844,325,30,98,28,50.1,550,4,12.5,7.2,14.85,0,0,60,60,0.656,0.8233,18.png
+19,19,Warwick,Warwick,워윅,the Uncaged Wrath of Zaun,자운의 고삐 풀린 분노,Male,Human / Mutant,Zaun,melee,Fighter,Tank,Mana,620,2303,280,875,335,33,107.8,32,66.85,125,4,16.75,7.45,17.65,0,0,65,65,0.638,0.8549,19.png
+20,20,Nunu,Nunu & Willump,누누와 윌럼프,the Boy and His Yeti,소년과 설인,Male,Human,Freljord,melee,Tank,Mage,Mana,610,2140,280,994,345,29,100.4,32,66.85,125,5,18.6,7,15.5,0,0,61,61,0.625,0.8641,20.png
+21,21,MissFortune,Miss Fortune,미스 포츈,the Bounty Hunter,현상금 사냥꾼,Female,Human,Bilgewater,ranged,Marksman,Mage,Mana,625,2325,300,980,325,25,93,30,52.1,550,3.75,14.8,8,21.6,0,0,55,55,0.656,0.9906,21.png
+22,22,Ashe,Ashe,애쉬,the Frost Archer,서리 궁수,Female,Human,Freljord,ranged,Marksman,Support,Mana,610,2327,280,875,325,26,104.2,30,52.1,600,3.5,12.85,7,18.05,0,0,59,59,0.658,0.9936,22.png
+23,23,Tryndamere,Tryndamere,트린다미어,the Barbarian King,야만전사 왕,Male,Human,Freljord,melee,Fighter,Assassin,Fury,696,2532,100,100,345,33,114.6,32,66.85,175,8.5,23.8,0,0,0,0,66,66,0.67,1.0573,23.png
+24,24,Jax,Jax,잭스,Grandmaster at Arms,무기의 달인,Male,Human,Icathia,melee,Fighter,,Mana,650,2401,339,1223,350,36,107.4,32,66.85,125,8.5,17.85,8.2,20.1,0,0,68,68,0.638,1.0068,24.png
+25,25,Morgana,Morgana,모르가나,the Fallen,타락한 자,Female,Celestial,Demacia,ranged,Support,Mage,Mana,630,2398,340,1360,335,25,96.4,30,52.1,450,5.5,12.3,11,17.8,0,0,56,56,0.625,0.7876,25.png
+26,26,Zilean,Zilean,질리언,the Chronokeeper,시간의 수호자,Male,Human,Icathia,ranged,Support,Mage,Mana,574,2206,452,1302,335,24,109,30,52.1,550,5.5,14.0,11.35,24.95,0,0,52,52,0.658,0.8963,26.png
+27,27,Singed,Singed,신지드,the Mad Chemist,미친 화학자,Male,Human,Zaun,melee,Tank,Mage,Mana,650,2282,330,1095,345,34,105.4,32,66.85,125,9.5,18.85,7.5,16.85,0,0,63,63,0.7,0.9261,27.png
+28,28,Evelynn,Evelynn,이블린,Agony's Embrace,고통스런 포옹,Female,Demon,Runeterra,melee,Assassin,Mage,Mana,642,2308,315,1029,335,37,116.9,32,66.85,125,8.5,21.25,8.11,18.31,0,0,61,61,0.667,0.9051,28.png
+29,29,Twitch,Twitch,트위치,the Plague Rat,역병 쥐,Male,Rat / Mutant,Zaun,ranged,Marksman,Assassin,Mana,630,2296,300,980,330,27,95,30,52.1,550,3.75,13.95,7.25,19.15,0,0,59,59,0.679,1.0253,29.png
+30,30,Karthus,Karthus,카서스,the Deathsinger,죽음을 노래하는 자,Male,Undead / Spirit,Shadow Isles,ranged,Mage,,Mana,620,2490,467,994,335,21,100.9,30,52.1,450,6.5,15.85,8,21.6,0,0,46,46,0.625,0.8492,30.png
+31,31,Chogath,Cho'Gath,초가스,the Terror of the Void,공허의 공포,Male,VoidBorn,The Void,melee,Tank,Mage,Mana,644,2242,270,1290,345,38,114.5,32,66.85,125,9,23.45,7.2,14.85,0,0,69,69,0.658,0.8191,31.png
+32,32,Amumu,Amumu,아무무,the Sad Mummy,슬픈 미라,Male,Yordle,Shurima,melee,Tank,Support,Mana,685,2283,285,965,335,33,101,32,66.85,125,9,23.45,7.4,16.75,0,0,57,57,0.736,1.0088,32.png
+33,33,Rammus,Rammus,람머스,the Armordillo,중무장 아르마딜로,Male,Ascended,Shurima,melee,Tank,,Mana,645,2345,310,871,335,35,111.5,32,66.85,125,8,17.35,7.85,16.35,0,0,65,65,0.7,0.9636,33.png
+34,34,Anivia,Anivia,애니비아,the Cryophoenix,얼음불사조,Female,Spirit / God,Freljord,ranged,Mage,,Mana,550,2114,495,1260,325,19,88.7,30,52.1,600,5.5,14.85,8,21.6,0,0,51,51,0.658,0.8459,34.png
+35,35,Shaco,Shaco,샤코,the Demon Jester,악마 어릿광대,Male,Demon,Runeterra,melee,Assassin,,Mana,630,2313,297,977,345,30,98,32,66.85,125,8.5,17.85,6,11.95,0,0,63,63,0.694,1.0479,35.png
+36,36,DrMundo,Dr. Mundo,문도 박사,the Madman of Zaun,자운의 광인,Male,Human,Zaun,melee,Tank,Fighter,None,640,2391,0,0,345,32,108.5,29,68.1,125,7,15.5,0,0,0,0,61,61,0.67,1.0459,36.png
+37,37,Sona,Sona,소나,Maven of the Strings,현의 명인,Female,Human,Demacia,ranged,Support,Mage,Mana,550,2097,340,1105,325,26,97.4,30,52.1,550,5.5,14.85,11.5,18.3,0,0,49,49,0.644,0.8958,37.png
+38,38,Kassadin,Kassadin,카사딘,the Void Walker,공허의 방랑자,Male,Human,The Void,melee,Assassin,Mage,Mana,646,2567,400,1879,335,21,89,30,52.1,150,6,14.5,6,19.6,0,0,59,59,0.64,1.0426,38.png
+39,39,Irelia,Irelia,이렐리아,the Blade Dancer,칼날 무희,Female,Human,Ionia,melee,Fighter,Assassin,Mana,630,2585,350,1200,335,36,115.9,30,64.85,200,3.5,17.95,8,21.6,0,0,65,65,0.656,0.9348,39.png
+40,40,Janna,Janna,잔나,the Storm's Fury,폭풍의 분노,Female,Spirit / God,Zaun,ranged,Support,Mage,Mana,570,2100,360,1210,325,28,104.5,30,52.1,550,5.5,14.85,11.5,18.3,0,0,47,47,0.625,0.9437,40.png
+41,41,Gangplank,Gangplank,갱플랭크,the Saltwater Scourge,바다의 무법자,Male,Human,Bilgewater,melee,Fighter,,Mana,630,2568,280,1300,345,31,110.9,32,66.85,125,6,16.2,8,19.9,0,0,64,64,0.658,1.016,41.png
+42,42,Corki,Corki,코르키,the Daring Bombardier,대담한 폭격수,Male,Yordle,Bandle City,ranged,Marksman,Mage,Mana,610,2310,350,1030,325,27,103.5,30,52.1,550,5.5,14.85,7.4,19.3,0,0,52,52,0.644,0.9505,42.png
+43,43,Karma,Karma,카르마,the Enlightened One,깨우친 자,Female,Human,Ionia,ranged,Mage,Support,Mana,630,2483,374,1054,335,28,113,30,52.1,525,5.5,14.85,13,26.6,0,0,49,49,0.625,0.8694,43.png
+44,44,Taric,Taric,타릭,the Shield of Valoran,발로란의 방패,Male,Human / Celestial,Targon,melee,Support,Tank,Mana,645,2328,300,1320,340,40,113.1,28,62.85,150,6,14.5,8.5,22.1,0,0,55,55,0.625,0.8375,44.png
+45,45,Veigar,Veigar,베이가,the Tiny Master of Evil,악의 작은 지배자,Male,Yordle,Bandle City,ranged,Mage,,Mana,580,2416,490,932,340,18,106.4,32,54.1,550,6.5,16.7,8,21.6,0,0,52,52,0.625,0.863,45.png
+46,48,Trundle,Trundle,트런들,the Troll King,트롤 왕,Male,Troll,Freljord,melee,Fighter,Tank,Mana,650,2520,340,1105,350,37,113.5,32,66.85,175,6,18.75,7.5,17.7,0,0,68,68,0.67,1.0003,48.png
+47,50,Swain,Swain,스웨인,the Noxian Grand General,녹서스 대장군,Male,Human,Noxus,ranged,Mage,Support,Mana,595,2278,400,893,330,25,104.9,31,57.35,525,3,11.5,10,23.6,0,0,58,58,0.625,0.8492,50.png
+48,51,Caitlyn,Caitlyn,케이틀린,the Sheriff of Piltover,필트오버의 보안관,Female,Human,Piltover,ranged,Marksman,,Mana,580,2399,315,995,325,27,106.9,30,52.1,650,3.5,12.85,7.4,19.3,0,0,62,62,0.681,1.1441,51.png
+49,53,Blitzcrank,Blitzcrank,블리츠크랭크,the Great Steam Golem,거대 증기 골렘,Other,Cyborg / Mech,Zaun,melee,Tank,Support,Mana,600,2453,267,947,325,37,116.9,32,66.85,125,7.5,20.25,8.5,22.1,0,0,62,62,0.625,0.7451,53.png
+50,54,Malphite,Malphite,말파이트,Shard of the Monolith,거석의 파편,Male,Construct / Golem,Ixtal,melee,Tank,Mage,Mana,665,2433,280,1300,335,40,124.15,28,62.85,125,7,16.35,7.3,16.65,0,0,62,62,0.736,1.1614,54.png
+51,55,Katarina,Katarina,카타리나,the Sinister Blade,사악한 칼날,Female,Human,Noxus,melee,Assassin,Mage,None,672,2508,0,0,335,32,111.9,32,66.85,125,7.5,19.4,0,0,0,0,58,58,0.658,0.9645,55.png
+52,56,Nocturne,Nocturne,녹턴,the Eternal Nightmare,영원한 악몽,Male,Demon,Runeterra,melee,Fighter,Assassin,Mana,655,2508,275,870,345,38,109.4,32,58.35,125,7,19.75,7,14.65,0,0,62,62,0.721,1.0519,56.png
+53,57,Maokai,Maokai,마오카이,the Twisted Treant,뒤틀린 나무 정령,Male,Spirit / Tree,Shadow Isles,melee,Tank,Support,Mana,665,2518,375,1106,335,35,123.4,32,66.85,125,5,17.75,6,16.2,0,0,64,64,0.8,1.089,57.png
+54,58,Renekton,Renekton,레넥톤,the Butcher of the Sands,사막의 도살자,Male,God-Warrior / Ascended,Shurima,melee,Fighter,Tank,Fury,660,2547,100,100,345,35,123.4,28,62.85,125,8,20.75,0,0,0,0,69,69,0.665,0.9759,58.png
+55,59,JarvanIV,Jarvan IV,자르반 4세,the Exemplar of Demacia,데마시아의 귀감,Male,Human,Demacia,melee,Fighter,Tank,Mana,640,2408,300,1235,340,36,114.2,32,66.85,175,8,19.9,6.5,14.15,0,0,64,64,0.658,0.9377,59.png
+56,60,Elise,Elise,엘리스,the Spider Queen,거미 여왕,Female,Human / Spider,Noxus,ranged,Assassin,Mage,Mana,620,2473,324,1174,330,30,106.5,30,52.1,550,5.5,15.7,6,19.6,0,0,55,55,0.625,0.8109,60.png
+57,61,Orianna,Orianna,오리아나,the Lady of Clockwork,시계태엽 소녀,Female,Cyborg / Mech,Piltover,ranged,Mage,Support,Mana,565,2435,418,843,325,20,91.4,26,48.1,525,7,16.35,8,21.6,0,0,44,44,0.658,1.0495,61.png
+58,62,MonkeyKing,Wukong,오공,the Monkey King,원숭이 왕,Male,Vastaya,Ionia,melee,Fighter,Tank,Mana,610,2293,330,1435,340,31,110.9,28,62.85,175,3.5,14.55,8,21.6,0,0,66,66,0.69,1.0419,62.png
+59,63,Brand,Brand,브랜드,the Burning Vengeance,타오르는 복수,Male,Human / Elemental,Freljord,ranged,Mage,Support,Mana,570,2355,469,826,340,24,95.4,30,52.1,550,5.5,14.85,11,21.2,0,0,57,57,0.681,0.9125,63.png
+60,64,LeeSin,Lee Sin,리 신,the Blind Monk,눈먼 수도승,Male,Human,Ionia,melee,Fighter,Assassin,Energy,645,2481,200,200,345,36,112.5,32,66.85,125,7.5,19.4,50,50,0,0,66,66,0.651,0.983,64.png
+61,67,Vayne,Vayne,베인,the Night Hunter,어둠 사냥꾼,Female,Human,Demacia,ranged,Marksman,Assassin,Mana,550,2301,232,827,330,23,101.2,30,52.1,550,3.5,12.85,7,13.8,0,0,60,60,0.658,1.0271,67.png
+62,68,Rumble,Rumble,럼블,the Mechanized Menace,기계 악동,Male,Yordle,Bandle City,melee,Fighter,Mage,Heat,640,2425,150,150,345,36,115.9,28,54.35,125,7,17.2,0,0,0,0,64,64,0.644,0.8465,68.png
+63,69,Cassiopeia,Cassiopeia,카시오페아,the Serpent's Embrace,독사의 포옹,Female,Human / Serpent,Noxus,ranged,Mage,,Mana,630,2296,480,1160,335,18,97.9,32,54.1,550,5.5,14.0,8,21.6,0,0,53,53,0.647,0.812,69.png
+64,72,Skarner,Skarner,스카너,the Primordial Sovereign,태고의 군주,Male,Brackern / Elemental,Ixtal,melee,Tank,Fighter,Mana,630,2500,320,1000,335,33,109.5,32,66.85,150,7.5,20.25,7.2,19.95,0,0,63,63,0.625,0.8375,72.png
+65,74,Heimerdinger,Heimerdinger,하이머딩거,the Revered Inventor,위대한 발명가,Male,Yordle,Piltover,ranged,Mage,Support,Mana,558,2343,385,725,340,19,90.4,30,52.1,550,7,16.35,8,21.6,0,0,56,56,0.658,0.8101,74.png
+66,75,Nasus,Nasus,나서스,the Curator of the Sands,사막의 관리자,Male,God-Warrior / Ascended,Shurima,melee,Fighter,Tank,Mana,650,2418,326,1380,350,34,113.9,32,66.85,125,9,24.3,7.45,15.95,0,0,67,67,0.638,1.0154,75.png
+67,76,Nidalee,Nidalee,니달리,the Bestial Huntress,야성의 사냥꾼,Female,Human,Ixtal,ranged,Assassin,Mage,Mana,610,2463,295,1060,335,32,117,30,54.65,525,6,16.2,6,19.6,0,0,58,58,0.638,0.9872,76.png
+68,77,Udyr,Udyr,우디르,the Spirit Walker,정령 주술사,Male,Human,Freljord,melee,Fighter,Tank,Mana,664,2228,271,1121,350,31,110.9,32,66.85,125,6,18.75,7.5,15.15,0,0,62,62,0.65,0.9815,77.png
+69,78,Poppy,Poppy,뽀삐,Keeper of the Hammer,망치의 수호자,Female,Yordle,Demacia,melee,Tank,Fighter,Mana,610,2480,280,960,345,35,120,32,66.85,125,8,21.6,7,18.9,0,0,60,60,0.658,0.9377,78.png
+70,79,Gragas,Gragas,그라가스,the Rabble Rouser,술취한 난동꾼,Male,Human,Freljord,melee,Fighter,Mage,Mana,640,2595,400,1199,330,38,123,32,66.85,125,5.5,14.0,6,19.6,0,0,64,64,0.675,0.9102,79.png
+71,80,Pantheon,Pantheon,판테온,the Unbreakable Spear,불굴의 창,Male,Human / Celestial,Targon,melee,Fighter,Assassin,Mana,650,2503,317,844,345,40,124.15,28,62.85,175,6,17.05,7.35,15.0,0,0,64,64,0.658,0.988,80.png
+72,81,Ezreal,Ezreal,이즈리얼,the Prodigal Explorer,무모한 탐험가,Male,Human,Piltover,ranged,Marksman,Mage,Mana,600,2334,375,1565,325,24,95.4,30,52.1,550,4,15.05,8.5,25.5,0,0,60,60,0.625,0.8906,81.png
+73,82,Mordekaiser,Mordekaiser,모데카이저,the Iron Revenant,강철의 망령,Male,Undead / Spirit,Noxus,melee,Fighter,Mage,Shield,645,2413,100,100,335,37,108.4,32,66.85,175,5,17.75,0,0,0,0,61,61,0.625,0.7312,82.png
+74,83,Yorick,Yorick,요릭,Shepherd of Souls,영혼의 길잡이,Male,Human,Shadow Isles,melee,Fighter,Tank,Mana,650,2588,300,1320,340,36,112.5,32,66.85,175,8,21.6,7.5,20.25,0,0,62,62,0.625,0.8375,83.png
+75,84,Akali,Akali,아칼리,the Rogue Assassin,섬기는 이 없는 암살자,Female,Human,Ionia,melee,Assassin,,Energy,600,2623,200,200,345,23,102.9,37,71.85,125,9,24.3,50,50,0,0,62,62,0.625,0.965,84.png
+76,85,Kennen,Kennen,케넨,the Heart of the Tempest,폭풍의 심장,Male,Yordle,Ionia,ranged,Mage,,Energy,580,2246,200,200,335,29,113.15,30,52.1,550,5.5,16.55,50,50,0,0,48,48,0.625,0.9862,85.png
+77,86,Garen,Garen,가렌,The Might of Demacia,데마시아의 힘,Male,Human,Demacia,melee,Fighter,Tank,None,690,2356,0,0,340,38,109.4,32,58.35,175,8,16.5,0,0,0,0,69,69,0.625,1.0128,86.png
+78,89,Leona,Leona,레오나,the Radiant Dawn,여명의 빛,Female,Human,Targon,melee,Tank,Support,Mana,646,2363,302,982,335,43,124.6,32,66.85,125,8.5,22.95,6,19.6,0,0,60,60,0.625,0.9331,89.png
+79,90,Malzahar,Malzahar,말자하,the Prophet of the Void,공허의 예언자,Male,Human,The Void,ranged,Mage,,Mana,580,2297,375,851,335,18,97.9,30,52.1,500,6,16.2,8,21.6,0,0,55,55,0.625,0.7844,90.png
+80,91,Talon,Talon,탈론,the Blade's Shadow,검의 그림자,Male,Human,Noxus,melee,Assassin,,Mana,658,2511,400,1029,335,30,109.9,36,70.85,125,8.5,21.25,7.6,21.2,0,0,68,68,0.625,0.9331,91.png
+81,92,Riven,Riven,리븐,the Exile,추방자,Female,Human,Noxus,melee,Fighter,Assassin,None,630,2330,0,0,340,33,107.8,32,66.85,125,8.5,17.0,0,0,0,0,64,64,0.625,0.9969,92.png
+82,96,KogMaw,Kog'Maw,코그모,the Mouth of the Abyss,심연의 아귀,Male,VoidBorn,The Void,ranged,Marksman,Mage,Mana,635,2318,325,1005,330,24,99.65,30,52.1,500,3.75,13.1,8.75,20.65,0,0,61,61,0.665,0.9646,96.png
+83,98,Shen,Shen,쉔,the Eye of Twilight,황혼의 눈,Male,Human,Ionia,melee,Tank,,Energy,610,2293,400,400,340,34,105.4,32,66.85,125,8.5,21.25,50,50,0,0,64,64,0.751,1.134,98.png
+84,99,Lux,Lux,럭스,the Lady of Luminosity,광명의 소녀,Female,Human,Demacia,ranged,Mage,Support,Mana,580,2263,440,839.5,330,21,109.4,30,52.1,550,5.5,14.85,9,22.6,0,0,54,54,0.669,1.0102,99.png
+85,101,Xerath,Xerath,제라스,the Magus Ascendant,초월한 마법사,Male,God-Warrior / Ascended,Shurima,ranged,Mage,Support,Mana,596,2398,400,774,340,22,101.9,30,52.1,525,5.5,14.85,6.85,20.45,0,0,55,55,0.658,0.8101,101.png
+86,102,Shyvana,Shyvana,쉬바나,the Half-Dragon,하프 드래곤,Female,Dragon,Demacia,melee,Fighter,Tank,Fury,625,2240,100,100,350,35,103,32,66.85,150,7,18.05,0,0,0,0,62,62,0.638,0.8549,102.png
+87,103,Ahri,Ahri,아리,the Nine-Tailed Fox,구미호,Female,Vastaya,Ionia,ranged,Mage,Assassin,Mana,590,2358,418,843,330,21,92.4,30,52.1,550,2.5,12.7,8,21.6,0,0,53,53,0.668,0.9178,103.png
+88,104,Graves,Graves,그레이브즈,the Outlaw,무법자,Male,Human,Bilgewater,ranged,Marksman,,Mana,625,2427,325,1005,340,33,111.2,30,52.1,425,8,19.9,8,19.9,0,0,66,66,0.475,0.7172,104.png
+89,105,Fizz,Fizz,피즈,the Tidal Trickster,대양의 말썽꾸러기,Male,Yordle,Bilgewater,melee,Assassin,Fighter,Mana,640,2442,317,1201,335,26,104.2,32,66.85,175,8,19.9,6,19.6,0,0,58,58,0.658,1.0048,105.png
+90,106,Volibear,Volibear,볼리베어,the Relentless Storm,무자비한 폭풍,Male,Spirit / God,Freljord,melee,Fighter,Tank,Mana,650,2418,350,1540,340,35,123.4,32,66.85,150,9,21.75,6.25,14.75,0,0,65,65,0.625,0.8375,106.png
+91,107,Rengar,Rengar,렝가,the Pridestalker,추적하는 사자,Male,Vastaya,Ixtal,melee,Assassin,Fighter,Ferocity,590,2358,4,4,345,34,105.4,32,66.85,125,6,14.5,0,0,0,0,68,68,0.667,1.0072,107.png
+92,110,Varus,Varus,바루스,the Arrow of Retribution,응징의 화살,Male,Darkin,Ionia,ranged,Marksman,Mage,Mana,600,2385,320,1000,330,24,92,30,52.1,575,3.5,12.85,8,21.6,0,0,59,59,0.658,1.0495,110.png
+93,111,Nautilus,Nautilus,노틸러스,the Titan of the Depths,심해의 타이탄,Male,Undead / Cyborg,Bilgewater,melee,Tank,Support,Mana,646,2346,400,1199,325,39,123.15,32,66.85,175,8.5,17.85,8.65,17.15,0,0,61,61,0.706,0.826,111.png
+94,112,Viktor,Viktor,빅토르,the Herald of the Arcane,아케인의 전령관,Male,Cyborg / Mech,Zaun,ranged,Mage,,Mana,600,2300,405,1170,335,23,97.8,30,52.1,525,8,19.05,8,21.6,0,0,53,53,0.658,0.894,112.png
+95,113,Sejuani,Sejuani,세주아니,Fury of the North,혹한의 분노,Female,Human,Freljord,melee,Tank,,Mana,630,2568,400,1080,340,34,126.65,32,66.85,150,8.5,25.5,7,18.9,0,0,66,66,0.688,1.0974,113.png
+96,114,Fiora,Fiora,피오라,the Grand Duelist,결투의 대가,Female,Human,Demacia,melee,Fighter,Assassin,Mana,620,2303,300,1320,345,33,112.9,32,66.85,150,8.5,17.85,8,19.9,0,0,66,66,0.69,1.0654,114.png
+97,115,Ziggs,Ziggs,직스,the Hexplosives Expert,마법공학 폭파병,Male,Yordle,Zaun,ranged,Mage,,Mana,606,2408,480,879.5,325,21,100.9,30,52.1,550,6.5,16.7,8,21.6,0,0,55,55,0.656,0.879,115.png
+98,117,Lulu,Lulu,룰루,the Fae Sorceress,요정 마법사,Female,Yordle,Bandle City,ranged,Support,Mage,Mana,565,2129,350,1285,330,26,104.2,30,52.1,550,6,16.2,11,21.2,0,0,47,47,0.625,0.8641,117.png
+99,119,Draven,Draven,드레이븐,the Glorious Executioner,화려한 처형자,Male,Human,Noxus,ranged,Marksman,,Mana,675,2443,361,1024,330,29,105.5,30,52.1,550,3.75,15.65,8.05,19.1,0,0,62,62,0.679,0.9907,119.png
+100,120,Hecarim,Hecarim,헤카림,the Shadow of War,전쟁의 전조,Male,Undead / Spirit,Shadow Isles,melee,Fighter,Tank,Mana,625,2427,280,960,345,32,124.65,32,66.85,175,7,19.75,7,20.6,0,0,66,66,0.67,0.9548,120.png
+101,121,Khazix,Kha'Zix,카직스,the Voidreaver,공허의 약탈자,Male,VoidBorn,The Void,melee,Assassin,,Mana,643,2326,327,1007,345,32,103.4,32,66.85,125,7.5,20.25,7.59,16.09,0,0,60,60,0.668,0.9746,121.png
+102,122,Darius,Darius,다리우스,the Hand of Noxus,녹서스의 실력자,Male,Human,Noxus,melee,Fighter,Tank,Mana,652,2590,263,1249,340,37,125.4,32,66.85,175,10,26.15,6.6,12.55,0,0,64,64,0.625,0.7312,122.png
+103,126,Jayce,Jayce,제이스,the Defender of Tomorrow,미래의 수호자,Male,Human,Piltover,ranged,Fighter,Marksman,Mana,590,2443,375,1140,335,22,107,30,52.1,125,6,16.2,6,19.6,0,0,59,59,0.658,0.9936,126.png
+104,127,Lissandra,Lissandra,리산드라,the Ice Witch,얼음 마녀,Female,Human,Freljord,ranged,Mage,,Mana,620,2490,475,985,325,22,93.4,30,52.1,550,7,16.35,8,14.8,0,0,55,55,0.656,0.8233,127.png
+105,131,Diana,Diana,다이애나,Scorn of the Moon,차가운 달의 분노,Female,Human,Targon,melee,Fighter,Assassin,Mana,640,2493,375,800,345,31,104.1,32,66.85,150,6.5,20.95,8,21.6,0,0,57,57,0.625,0.8375,131.png
+106,133,Quinn,Quinn,퀸,Demacia's Wings,데마시아의 날개,Female,Human,Demacia,ranged,Marksman,Assassin,Mana,565,2384,269,864,330,28,107.9,30,52.1,525,5.5,14.85,7,13.8,0,0,59,59,0.668,1.02,133.png
+107,134,Syndra,Syndra,신드라,the Dark Sovereign,어둠의 여제,Female,Human,Ionia,ranged,Mage,,Mana,583,2283,480,1160,330,25,93,30,52.1,550,6.5,16.7,8,21.6,0,0,54,54,0.658,0.8817,134.png
+108,136,AurelionSol,Aurelion Sol,아우렐리온 솔,The Star Forger,별의 창조자,Male,Dragon,Targon,ranged,Mage,,Mana,600,2130,530,1210,340,22,90,30,52.1,550,5.5,14.85,8,20.75,0,0,58,58,0.625,0.7844,136.png
+109,141,Kayn,Kayn,케인,the Shadow Reaper,그림자 사신,Male,Human / Darkin,Ionia,melee,Fighter,Assassin,Mana,655,2406,410,1260,340,38,114.5,32,66.85,175,8,20.75,11.5,27.65,0,0,68,68,0.669,0.9761,141.png
+110,142,Zoe,Zoe,조이,the Aspect of Twilight,여명의 성위,Female,Human / Celestial,Targon,ranged,Mage,,Mana,630,2432,425,850,340,21,100.9,30,52.1,550,7.5,17.7,8,19.05,0,0,58,58,0.658,0.9377,142.png
+111,143,Zyra,Zyra,자이라,Rise of the Thorns,가시 덩굴의 복수,Female,Plant / Spirit,Ixtal,ranged,Mage,Support,Mana,574,2155,418,843,340,29,100.4,30,52.1,575,5.5,14.0,7,20.6,0,0,53,53,0.681,0.9253,143.png
+112,145,Kaisa,Kai'Sa,카이사,Daughter of the Void,공허의 딸,Female,Human,The Void,ranged,Marksman,Mage,Mana,640,2374,345,1025,335,25,96.4,30,52.1,525,4,13.35,8.2,20.1,0,0,59,59,0.644,0.8411,145.png
+113,147,Seraphine,Seraphine,세라핀,the Starry-Eyed Songstress,노래하는 별,Female,Human,Piltover,ranged,Support,Mage,Mana,570,2185,360,1040,330,26,97.4,30,52.1,525,6.5,16.7,11.5,27.65,0,0,50,50,0.669,0.8965,147.png
+114,150,Gnar,Gnar,나르,the Missing Link,잃어버린 고리,Male,Yordle,Freljord,ranged,Fighter,Tank,Rage,540,1883,100,100,335,32,94.9,30,52.1,175,4.5,25.75,0,0,0,0,60,60,0.625,1.2625,150.png
+115,154,Zac,Zac,자크,the Secret Weapon,비밀 병기,Male,Mutant / Ooze,Zaun,melee,Tank,Fighter,None,685,2538,0,0,340,33,112.9,32,66.85,175,5,13.5,0,0,0,0,60,60,0.736,0.9362,154.png
+116,157,Yasuo,Yasuo,야스오,the Unforgiven,용서받지 못한 자,Male,Human,Ionia,melee,Fighter,Assassin,Flow,590,2460,100,100,345,32,110.2,32,66.85,175,6.5,21.8,0,0,0,0,60,60,0.697,1.1117,157.png
+117,161,Velkoz,Vel'Koz,벨코즈,the Eye of the Void,공허의 눈,Male,VoidBorn,The Void,ranged,Mage,Support,Mana,590,2324,469,826,340,22,101.9,30,52.1,525,5.5,14.85,8,21.6,0,0,55,55,0.643,0.8168,161.png
+118,163,Taliyah,Taliyah,탈리야,the Stoneweaver,바위술사,Female,Human,Shurima,ranged,Mage,Support,Mana,550,2318,470,980,330,18,97.9,28,50.1,525,6.5,17.55,8,21.6,0,0,58,58,0.658,0.8101,163.png
+119,164,Camille,Camille,카밀,the Steel Shadow,강철의 그림자,Female,Cyborg / Mech,Piltover,melee,Fighter,Assassin,Mana,650,2333,339,1223,340,35,111.5,32,66.85,125,8.5,22.1,8.15,20.9,0,0,68,68,0.644,0.9177,164.png
+120,166,Akshan,Akshan,아크샨,the Rogue Sentinel,떠도는 감시자,Male,Human,Shurima,ranged,Marksman,Assassin,Mana,610,2429,350,1030,330,26,105.9,30,52.1,500,3.75,14.8,8.2,20.1,0,0,52,52,0.638,1.0718,166.png
+121,200,Belveth,Bel'Veth,벨베스,the Empress of the Void,공허의 여제,Female,VoidBorn,The Void,melee,Fighter,,None,610,2395,60,60,340,32,111.9,32,66.85,150,6,16.2,0,0,0,0,60,60,0.85,0.85,200.png
+122,201,Braum,Braum,브라움,the Heart of the Freljord,프렐요드의 심장,Male,Human,Freljord,melee,Tank,Support,Mana,610,2514,311,1076,335,35,120,32,66.85,125,8.5,25.5,7,20.6,0,0,55,55,0.644,1.0272,201.png
+123,202,Jhin,Jhin,진,the Virtuoso,잔혹극의 거장,Male,Human,Ionia,ranged,Marksman,Mage,Mana,655,2474,300,1150,330,24,103.9,30,52.1,550,3.75,13.1,6,19.6,0,0,61,61,0.625,0.625,202.png
+124,203,Kindred,Kindred,킨드레드,The Eternal Hunters,영겁의 사냥꾼,Other,Spirit / God,Runeterra,ranged,Marksman,,Mana,595,2363,300,895,325,29,108.9,30,52.1,500,7,16.35,7,13.8,0,0,65,65,0.625,0.9969,203.png
+125,221,Zeri,Zeri,제리,The Spark of Zaun,자운의 불꽃,Female,Human,Zaun,ranged,Marksman,,Mana,600,2470,250,1015,330,24,95.4,30,52.1,550,3.25,15.15,6,19.6,0,0,56,56,0.658,0.8817,221.png
+126,222,Jinx,Jinx,징크스,the Loose Cannon,난폭한 말괄량이,Female,Human,Zaun,ranged,Marksman,,Mana,630,2415,260,1110,325,26,97.4,30,52.1,525,3.75,12.25,6.7,23.7,0,0,59,59,0.625,0.7312,222.png
+127,223,TahmKench,Tahm Kench,탐 켄치,The River King,강의 폭군,Male,Demon,Bilgewater,melee,Tank,Support,Mana,640,2391,325,1175,335,39,118.9,32,66.85,175,6.5,15.85,8,25,0,0,56,56,0.658,0.9377,223.png
+128,233,Briar,Briar,브라이어,the Restrained Hunger,억눌린 허기,Female,Construct / Golem,Noxus,melee,Fighter,Assassin,Fury,625,2240,0,0,340,30,106.5,32,66.85,125,0,0,0,0,0,0,60,60,0.644,0.863,233.png
+129,234,Viego,Viego,비에고,The Ruined King,몰락한 왕,Male,Undead,Shadow Isles,melee,Fighter,Assassin,None,630,2483,0,0,345,34,112.2,32,66.85,200,7,18.9,0,0,0,0,57,57,0.658,0.9656,234.png
+130,235,Senna,Senna,세나,the Redeemer,구원자,Female,Human / Spirit,Shadow Isles,ranged,Support,Marksman,Mana,530,2043,350,1115,330,25,93,30,52.1,600,3.5,12.85,11.5,23.4,0,0,50,50,0.625,0.9012,235.png
+131,236,Lucian,Lucian,루시안,the Purifier,정화의 사도,Male,Human,Demacia,ranged,Marksman,Assassin,Mana,641,2341,320,1051,335,28,99.4,30,52.1,500,3.75,14.8,7,20.6,0,0,60,60,0.638,0.9092,236.png
+132,238,Zed,Zed,제드,the Master of Shadows,그림자의 주인,Male,Human,Ionia,melee,Assassin,,Energy,654,2337,200,200,345,32,111.9,29,63.85,125,7,18.05,50,50,0,0,63,63,0.651,1.0162,238.png
+133,240,Kled,Kled,클레드,the Cantankerous Cavalier,망나니 기사,Male,Yordle,Noxus,melee,Fighter,,Courage,410,1838,100,100,345,35,123.4,28,62.85,125,6,18.75,0,0,0,0,65,65,0.625,0.9969,240.png
+134,245,Ekko,Ekko,에코,the Boy Who Shattered Time,시간을 달리는 소년,Male,Human,Zaun,melee,Assassin,Mage,Mana,655,2338,280,1470,340,32,103.4,32,66.85,125,9,24.3,7,20.6,0,0,58,58,0.688,1.074,245.png
+135,246,Qiyana,Qiyana,키아나,Empress of the Elements,원소의 여왕,Female,Human,Ixtal,melee,Assassin,,Mana,590,2545,375,1395,335,31,107.5,32,66.85,150,8,23.3,8,19.9,0,0,64,64,0.688,0.9336,246.png
+136,254,Vi,Vi,바이,the Piltover Enforcer,필트오버의 집행자,Female,Human,Piltover,melee,Fighter,Assassin,Mana,655,2440,295,1400,340,30,109.9,32,66.85,125,10,27,8,19.05,0,0,63,63,0.644,0.863,254.png
+137,266,Aatrox,Aatrox,아트록스,the Darkin Blade,다르킨의 검,Male,Darkin,Runeterra,melee,Fighter,,Blood Well,650,2588,0,0,345,38,119.6,32,66.85,175,3,11.5,0,0,0,0,60,60,0.651,0.9277,266.png
+138,267,Nami,Nami,나미,the Tidecaller,파도 소환사,Female,Vastaya,Runeterra,ranged,Support,Mage,Mana,560,2056,365,1096,335,29,117.4,30,52.1,550,5.5,14.85,11.5,18.3,0,0,54,54,0.644,0.9297,267.png
+139,268,Azir,Azir,아지르,the Emperor of the Sands,사막의 황제,Male,God-Warrior / Ascended,Shurima,ranged,Mage,Marksman,Mana,575,2411,320,1000,330,25,110,30,52.1,525,7,19.75,8,21.6,0,0,56,56,0.625,1.1562,268.png
+140,350,Yuumi,Yuumi,유미,the Magical Cat,마법 고양이,Female,Cat / Magical,Bandle City,ranged,Support,Mage,Mana,500,1673,440,1205,330,25,96.4,25,43.7,425,5,14.35,10,16.8,0,0,49,49,0.625,0.7312,350.png
+141,360,Samira,Samira,사미라,the Desert Rose,사막의 장미,Female,Human,Noxus,ranged,Marksman,Assassin,Mana,630,2466,349,995,335,26,105.9,30,52.1,500,3.25,12.6,8.2,20.1,0,0,57,57,0.658,1.0271,360.png
+142,412,Thresh,Thresh,쓰레쉬,the Chain Warden,지옥의 간수,Male,Undead,Shadow Isles,ranged,Support,Tank,Mana,620,2660,274,1022,330,33,33,30,56.35,450,7,16.35,6,19.6,0,0,56,56,0.625,0.9969,412.png
+143,420,Illaoi,Illaoi,일라오이,the Kraken Priestess,크라켄의 여사제,Female,Human,Bilgewater,melee,Fighter,Tank,Mana,656,2611,350,1200,350,35,120,32,66.85,125,9.5,23.1,7.5,20.25,0,0,65,65,0.625,0.8906,420.png
+144,421,RekSai,Rek'Sai,렉사이,the Void Burrower,공허의 복병,Female,VoidBorn,The Void,melee,Fighter,Tank,Rage,600,2283,100,100,340,35,111.5,32,66.85,175,2.5,11.0,0,0,0,0,62,62,0.667,0.8938,421.png
+145,427,Ivern,Ivern,아이번,the Green Father,자연의 아버지,Male,Human / Tree,Ionia,ranged,Support,Mage,Mana,630,2313,450,1470,330,27,106.9,30,52.1,475,7,21.45,6,18.75,0,0,50,50,0.644,1.0162,427.png
+146,429,Kalista,Kalista,칼리스타,the Spear of Vengeance,복수의 화신,Female,Undead / Spirit,Shadow Isles,ranged,Marksman,,Mana,560,2498,300,1065,330,24,112.4,30,52.1,525,4,16.75,6.3,19.9,0,0,57,57,0.694,1.2249,429.png
+147,432,Bard,Bard,바드,the Wandering Caretaker,영겁의 수호자,Male,Celestial,Runeterra,ranged,Support,Mage,Mana,630,2381,350,1200,335,34,119,30,52.1,500,5.5,14.85,6,13.65,0,0,52,52,0.658,0.8817,432.png
+148,497,Rakan,Rakan,라칸,The Charmer,매혹하는 자,Male,Vastaya,Ionia,melee,Support,,Mana,610,2293,315,1165,335,30,113.3,32,66.85,300,5,13.5,8.75,17.25,0,0,62,62,0.635,0.9588,497.png
+149,498,Xayah,Xayah,자야,the Rebel,저항하는 자,Female,Vastaya,Ionia,ranged,Marksman,,Mana,630,2449,340,1020,330,25,96.4,30,52.1,525,3.25,16.0,8.25,21.85,0,0,60,60,0.658,1.0943,498.png
+150,516,Ornn,Ornn,오른,The Fire below the Mountain,거산의 화염,Male,Spirit / God,Freljord,melee,Tank,,Mana,660,2513,341,1446,335,33,121.4,32,66.85,175,9,24.3,8,18.2,0,0,69,69,0.625,0.8375,516.png
+151,517,Sylas,Sylas,사일러스,the Unshackled,해방된 자,Male,Human,Demacia,melee,Mage,Assassin,Mana,600,2674,400,1590,340,29,117.4,32,75.35,175,9,24.3,8,21.6,0,0,61,61,0.645,1.0288,517.png
+152,518,Neeko,Neeko,니코,the Curious Chameleon,알쏭달쏭 카멜레온,Female,Vastaya,Ixtal,ranged,Mage,Support,Mana,610,2378,450,960,340,21,109.4,30,52.1,550,7.5,20.25,7,18.9,0,0,48,48,0.625,0.9969,518.png
+153,523,Aphelios,Aphelios,아펠리오스,the Weapon of the Faithful,신념의 무기,Male,Human,Targon,ranged,Marksman,,Mana,600,2334,348,1062,325,26,97.4,30,52.1,550,3.25,12.6,6.5,13.3,0,0,55,55,0.665,0.9024,523.png
+154,526,Rell,Rell,렐,the Iron Maiden,철의 여인,Female,Human,Noxus,melee,Tank,Support,Mana,620,2388,320,1000,315,30,98,28,58.6,175,7.5,21.95,7,18.9,0,0,55,55,0.625,0.8375,526.png
+155,555,Pyke,Pyke,파이크,the Bloodharbor Ripper,핏빛 항구의 학살자,Male,Undead,Bilgewater,melee,Support,Assassin,Mana,670,2540,415,1265,330,37,116.9,32,66.85,150,7,15.5,8,25,0,0,62,62,0.667,0.9505,555.png
+156,711,Vex,Vex,벡스,the Gloomist,우울주의자,Female,Yordle,Shadow Isles,ranged,Mage,,Mana,590,2358,490,1034,335,23,98.65,28,50.1,550,6.5,16.7,6,19.6,0,0,54,54,0.669,0.7827,711.png
+157,777,Yone,Yone,요네,the Unforgotten,잊히지 못한 자,Male,Human / Spirit,Ionia,melee,Fighter,Assassin,Flow,620,2405,500,500,345,33,111.2,32,66.85,175,7.5,20.25,0,0,0,0,62,62,0.625,0.9969,777.png
+158,799,Ambessa,Ambessa,암베사,Matriarch of War,전장의 우두머리,Female,Human,Noxus,melee,Fighter,Assassin,Energy,630,2500,200,200,335,35,118.3,32,66.85,125,8.5,21.25,50,50,0,0,63,63,0.625,0.8906,799.png
+159,800,Mel,Mel,멜,the Soul's Reflection,영혼의 반향,Other,Human,Runeterra,ranged,Mage,Support,Mana,630,2313,480,956,330,21,109.4,30,52.1,550,6,15.35,9,24.3,0,0,54,54,0.625,0.8906,800.png
+160,804,Yunara,Yunara,유나라,the Unbroken Faith,꺾이지 않는 신념,Other,Human,Runeterra,ranged,Marksman,,Mana,590,2460,275,1040,325,25,99.8,30,52.1,575,4,13.35,7.5,20.25,0,0,55,55,0.65,0.871,804.png
+161,805,Locke,Locke,로크,the Ashen Exorcist,잿빛 퇴마사,Other,Human,Runeterra,melee,Assassin,Mage,Mana,655,2508,280,1470,340,32,103.4,32,66.85,125,9,24.3,7,20.6,0,0,58,58,0.688,1.074,805.png
+162,875,Sett,Sett,세트,the Boss,우두머리,Male,Human / Vastaya,Ionia,melee,Fighter,Tank,Grit,670,2608,0,0,340,33,112.9,28,62.85,125,7,15.5,0,0,0,0,60,60,0.625,0.8109,875.png
+163,876,Lillia,Lillia,릴리아,the Bashful Bloom,수줍은 꽃,Female,Spirit,Ionia,melee,Fighter,Mage,Mana,605,2390,410,1260,330,22,98.5,32,58.35,325,2.5,11.85,11.5,27.65,0,0,61,61,0.625,0.9119,876.png
+164,887,Gwen,Gwen,그웬,The Hallowed Seamstress,신성한 재봉사,Female,Human / Doll,Shadow Isles,melee,Fighter,,Mana,620,2575,330,1010,340,39,122.3,32,66.85,150,9,24.3,7.5,19.4,0,0,63,63,0.69,0.9539,887.png
+165,888,Renata,Renata Glasc,레나타 글라스크,the Chem-Baroness,화공 남작,Female,Human,Zaun,ranged,Support,Mage,Mana,545,2143,350,1200,330,27,106.9,30,52.1,550,5.5,14.85,11.5,20.0,0,0,49,49,0.625,0.8492,888.png
+166,893,Aurora,Aurora,오로라,the Witch Between Worlds,세계의 경계에 선 마녀,Female,Vastaya,Freljord,ranged,Mage,Assassin,Mana,607,2477,475,985,335,23,99.5,32,54.1,550,6,15.35,8,21.6,0,0,53,53,0.668,0.8951,893.png
+167,895,Nilah,Nilah,닐라,the Joy Unbound,해방된 기쁨,Female,Human,Bilgewater,melee,Fighter,Assassin,Mana,570,2287,350,945,340,27,98.4,32,66.85,225,6,21.3,8.2,20.1,0,0,58,58,0.697,0.8451,895.png
+168,897,KSante,K'Sante,크산테,the Pride of Nazumah,나주마의 긍지,Male,Human,Shurima,melee,Tank,Fighter,Mana,625,2665,320,1340,330,36,124.4,30,65.7,150,9.5,26.5,7,24,0,0,64,64,0.688,0.9804,897.png
+169,901,Smolder,Smolder,스몰더,the Fiery Fledgling,꼬마 불꽃용,Male,Dragon,Camavor,ranged,Marksman,Mage,Mana,575,2275,300,980,330,24,92,30,52.1,550,3.75,13.95,8.5,20.4,0,0,58,58,0.638,1.0718,901.png
+170,902,Milio,Milio,밀리오,The Gentle Flame,온화한 불꽃,Male,Human,Ixtal,ranged,Support,Mage,Mana,560,2056,365,1096,330,26,104.2,30,52.1,525,5,13.5,11.5,18.3,0,0,48,48,0.625,0.9437,902.png
+171,904,Zaahen,Zaahen,자헨,The Unsundered,저물지 않는 자,Other,Human,Runeterra,melee,Fighter,Assassin,Mana,640,2578,350,1285,345,36,121,32,66.85,175,7.5,21.1,8.15,20.9,0,0,63,63,0.625,0.8906,904.png
+172,910,Hwei,Hwei,흐웨이,the Visionary,몽상가,Male,Human,Ionia,ranged,Mage,Support,Mana,580,2433,480,990,330,21,100.9,30,52.1,550,5.5,14.85,7.5,20.25,0,0,54,54,0.69,0.9832,910.png
+173,950,Naafiri,Naafiri,나피리,the Hound of a Hundred Bites,백 번 무는 사냥개,Female,Darkin,Shurima,melee,Assassin,Fighter,Mana,610,2395,400,1335,340,28,99.4,32,66.85,125,6.25,16.45,7.5,24.5,0,0,55,55,0.663,0.8997,950.png

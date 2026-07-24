@@ -1,0 +1,31 @@
+{
+  "name": "champdle-frontend",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "nuxt": "^3.0.0",
+    "prettier": "^2.8.1",
+    "rollup-plugin-fluent-vue": "^3.0.1",
+    "vue-gtag-next": "^1.14.0"
+  },
+  "dependencies": {
+    "@fluent/bundle": "^0.17.1",
+    "@pinia/nuxt": "^0.4.6",
+    "accept-language-parser": "^1.5.0",
+    "buffer": "^6.0.3",
+    "fluent-vue": "^3.2.0",
+    "lodash": "^4.17.21",
+    "pinia": "^2.0.28",
+    "vue": "^3.2.45",
+    "vue3-lazyload": "^0.3.6"
+  }
+}

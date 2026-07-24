@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "champdle-backend"
+version = "0.1.0"
+description = "League of Legends Champion guessing game inspired by Semantle"
+authors = ["Nesswit <rishubil@gmail.com>"]
+license = "MIT"
+packages = [
+    { include="app", from="." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.75.1"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+pandas = "^1.4.2"
+scikit-learn = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+frictionless = "^4.34.0"
+poethepoet = "^0.13.1"
+
+[tool.poe.tasks]
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "app.main:start"
