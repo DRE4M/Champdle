@@ -2,7 +2,7 @@ champdle = Champdle
 champdle-index-subtitle = #{$puzzle_number}
 champdle-rank-subtitle = #{$puzzle_number} 전체 순위
 
-og-description = 오늘의 챔피언을 맞춰보세요! 챔피언 이름을 입력하면 정답과 얼마나 비슷한지 알려줍니다. 훈협지 화이팅!
+og-description = 오늘의 챔피언을 맞춰보세요! 유사도는 카테고리 7종(80점) + 스탯 18종 Min-Max(20점) 총 100점 기준입니다. 훈협지 화이팅!
 
 language-locale-en = English
 language-locale-ko = 한국어
