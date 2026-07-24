@@ -1,13 +1,13 @@
-# Pokémantle
+# Champdle
 
-https://pokemantle.update.sh/
+http://yeardayhour.duckdns.org/
 
-Pokémon guessing game inspired by [Semantle](https://semantle.novalis.org/)
+League of Legends champion guessing game inspired by [Semantle](https://semantle.novalis.org/)
 
 ## Clone
 
 ```bash
-git clone --recursive https://github.com/yf-dev/pokemantle.git
+git clone --recursive https://github.com/DRE4M/Champdle.git
 ```
 
 ## Start server
