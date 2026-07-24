@@ -62,12 +62,12 @@ useHead({
     {
       rel: "icon",
       type: "image/svg+xml",
-      href: "/favicon.svg",
+      href: "/favicon.svg?v=2",
     },
     {
       rel: "icon",
       type: "image/png",
-      href: "/favicon.png",
+      href: "/favicon.png?v=2",
     },
   ],
 })
