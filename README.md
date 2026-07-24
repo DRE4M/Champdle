@@ -1,6 +1,6 @@
 # Champdle
 
-http://yeardayhour.duckdns.org/
+http://yeardayhour.duckdns.org:3100/
 
 League of Legends champion guessing game inspired by [Semantle](https://semantle.novalis.org/)
 
@@ -13,7 +13,7 @@ git clone --recursive https://github.com/DRE4M/Champdle.git
 ## Start server
 
 ```bash
-docker-compose up # http://localhost:3000/
+docker-compose -f docker-compose.prod.yml up -d # http://localhost:3100/
 ```
 
 ## Generate old_secret.csv
@@ -32,9 +32,7 @@ poetry run poe validate-data
 
 ## Data source
 
-pokedex.csv is based on [Complete Pokemon Dataset](https://www.kaggle.com/datasets/mariotormo/complete-pokemon-dataset-updated-090420) by Mario Tormo Romero, CC BY-SA 4.0
-
-images are based on [PokéAPI Sprites](https://github.com/PokeAPI/sprites), CC0 1.0 Universal
+champions.csv and champion icons are based on League of Legends DataDragon and CommunityDragon datasets.
 
 # LICENSE
 

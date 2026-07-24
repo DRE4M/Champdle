@@ -59,7 +59,7 @@
           <template #source_code_link="{ sourceCodeLinkLabel }">
             <a
               target="_blank"
-              href="https://github.com/yf-dev/champdle"
+              href="https://github.com/DRE4M/Champdle"
               class="text-blue-600"
               >{{ sourceCodeLinkLabel }}</a
             >
@@ -73,7 +73,7 @@
           <template #issue_link="{ issueLinkLabel }">
             <a
               target="_blank"
-              href="https://github.com/yf-dev/champdle/issues"
+              href="https://github.com/DRE4M/Champdle/issues"
               class="text-blue-600"
               >{{ issueLinkLabel }}</a
             >
