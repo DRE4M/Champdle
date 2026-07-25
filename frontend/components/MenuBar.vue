@@ -68,7 +68,7 @@ watch(() => state.puzzle_number, (newVal) => {
 const onDateChange = () => {
   if (selectedDate.value) {
     const targetPuzzle = dateToPuzzleNumber(selectedDate.value)
-    window.location.href = `?puzzle=${targetPuzzle}`
+    window.location.href = `/?puzzle=${targetPuzzle}`
   }
 }
 
