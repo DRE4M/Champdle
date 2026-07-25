@@ -47,7 +47,7 @@
             </ArrowIcon>
           </button>
         </th>
-        <th class="p-2">
+        <th class="hidden sm:table-cell p-2">
           <span class="font-bold text-xs text-gray-700 dark:text-slate-300">
             {{ $t("guess-result-header-formula") }}
           </span>

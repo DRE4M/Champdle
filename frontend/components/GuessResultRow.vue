@@ -5,8 +5,9 @@
     @click="is_show_champion_info = !is_show_champion_info"
   >
     <td class="p-2" v-if="is_show_index">{{ guess_data.index + 1 }}</td>
-    <td class="p-2 pr-0 w-12">
+    <td class="p-2 pr-0 w-10 sm:w-12">
       <img
+        class="w-8 h-8 sm:w-10 sm:h-10 rounded shadow-sm object-cover flex-shrink-0"
         :alt="state.translateChampionName(guess_data.name, false) || guess_data.name"
         v-lazy="{
           src: championImageUrl,
@@ -25,7 +26,7 @@
     >
       {{ (guess_data.similarity * 100).toFixed(3) }}%
     </td>
-    <td class="p-2 text-xs font-mono text-gray-600 dark:text-slate-400 whitespace-nowrap">
+    <td class="hidden sm:table-cell p-2 text-xs font-mono text-gray-600 dark:text-slate-400 whitespace-nowrap">
       <span v-if="guess_data.formula_detail" class="px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-700/60 text-[11px]">
         {{ guess_data.formula_detail }}
       </span>
@@ -54,7 +55,7 @@
   </tr>
   <tr v-if="is_show_champion_info">
     <td class="p-2" :colspan="is_show_index ? 6 : 5">
-      <ChampionInfo v-if="champion" :champion="champion"></ChampionInfo>
+      <ChampionInfo v-if="champion" :champion="champion" :formula_detail="guess_data.formula_detail"></ChampionInfo>
     </td>
   </tr>
 </template>

@@ -18,6 +18,11 @@
         <div class="italic text-xs text-indigo-600 dark:text-indigo-400 font-medium">
           {{ state.locale === 'ko' ? champion.title_ko : champion.title_en }}
         </div>
+        <div v-if="formula_detail" class="mt-1">
+          <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-indigo-100 dark:bg-indigo-900/80 text-indigo-800 dark:text-indigo-200">
+            📊 계산 구성: {{ formula_detail }}
+          </span>
+        </div>
       </div>
     </div>
 
@@ -116,7 +121,8 @@
 <script setup lang="ts">
 const state = useStore()
 const props = defineProps<{
-  champion?: Champion
+  champion: any
+  formula_detail?: string
 }>()
 
 const championImageUrl = computed(() => {
