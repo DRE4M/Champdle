@@ -65,16 +65,16 @@ faq-show-info-title = Can I see the details of Champions?
 faq-show-info-description = Yes, click on the Champion you guessed in the list to see the details.
 
 faq-similarity-title = How does it calculate the similarity?
-faq-similarity-description = Similarity is calculated on a 100-point total scale (Categories 80 pts + Stats 20 pts) with weighted category rarity:
+faq-similarity-description = Similarity is calculated on a 100-point total scale (Categories 80 pts + Stats 20 pts) with custom weights:
   1. Categories (80 pts total / Weighted by rarity):
-  - Region (15 pts): 15 pts for exact match among 14 regions (Rarest match buff)
-  - Species (15 pts): 15 pts for exact match, 7.5 pts for partial overlap (Rarest match buff)
-  - Release Order (14 pts): Up to 14 pts scaled linearly by index difference (1 to 173)
-  - Role (Tag 1 & 2) (12 pts): 12 pts (100%) for exact match, 9.6 pts (80%) for Tag 1, 8.4 pts (70%) for swapped match, 6 pts (50%) for Tag 2 partial match
-  - Resource (10 pts): 10 pts for matching resource type (Mana/Energy/No Mana)
-  - Attack Type (7 pts) & Gender (7 pts): 7 pts each (Fewer options)
-  2. Stats (20 pts / 18 items, ~1.11 pts each):
-  - Min-Max scaling across 18 numerical stats (HP, MP, Range, Movespeed, AD, AS, Armor, MR, Regen).
+  - Region (18 pts) & Species (18 pts): 18 pts each for exact match (9 pts for partial species overlap)
+  - Role (Tag 1 & 2) (15 pts): 15 pts (100%) for exact match, 12 pts (80%) for Tag 1, 10.5 pts (70%) for swapped match, 7.5 pts (50%) for Tag 2
+  - Resource (12 pts): 12 pts for matching resource type (Mana/Energy/No Mana)
+  - Attack Type (7 pts) & Gender (5 pts): 7 pts and 5 pts respectively
+  - Release Order (5 pts): Up to 5 pts scaled linearly by index difference (1 to 173) (Lowered weight)
+  2. Stats (20 pts total / Key stats heavily weighted):
+  - High-weight Key Stats: Movespeed (4.0 pts) and Attack Range (4.0 pts) (Total 8.0 pts)
+  - Remaining 16 Base Stats: 0.75 pts each (Total 12.0 pts across HP, MP, AD, AS, Armor, MR, Regen).
 
 faq-once-per-day-title = Can I play more than once a day?
 faq-once-per-day-description = Unfortunately, you can only play once a day.
