@@ -10,4 +10,4 @@ export const apiRank = (puzzle_number: number) =>
   $fetch<Array<GuessResult>>(`${apiBase()}/rank/${puzzle_number}`)
 
 export const apiGuess = (puzzle_number: number, name: string) =>
-  $fetch<GuessResult>(`${apiBase()}/guess/${puzzle_number}?name=${name}`)
+  $fetch<GuessResult>(`${apiBase()}/guess/${puzzle_number}?name=${encodeURIComponent(name)}`)

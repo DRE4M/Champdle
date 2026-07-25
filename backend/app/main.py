@@ -123,19 +123,25 @@ async def rank(
     return ranks
 
 
+def normalize_champion_name(s) -> str:
+    if s is None or pd.isna(s):
+        return ""
+    import re
+    return re.sub(r"[^a-zA-Z0-9가-힣]", "", str(s)).lower()
+
 @app.get(
     "/guess/{puzzle_number}",
     response_model=GuessResult,
     responses={
         404: {
             "model": ErrorMessage,
-            "description": "The Champion was not found",
+            "description": "Champion not found.",
             "content": {
                 "application/json": {
-                    "example": ErrorMessage(
-                        code=ErrorMessage.CodeConstant.CODE_CHAMPION_NOT_FOUND,
-                        message="Champion not found.",
-                    )
+                    "example": {
+                        "code": ErrorMessage.CodeConstant.CODE_CHAMPION_NOT_FOUND,
+                        "message": "Champion not found.",
+                    }
                 }
             },
         }
@@ -143,7 +149,7 @@ async def rank(
 )
 async def guess(
     puzzle_number: int = Path(..., description="Number of Lolmantle.", example=1),
-    name: str = Query(..., description="Champion's English name.", example="Annie"),
+    name: str = Query(..., description="Champion's English or Korean name or alias.", example="Annie"),
 ):
     """Guess the Champion"""
     index = secret_index(puzzle_number)
@@ -151,19 +157,50 @@ async def guess(
         champion_index=index,
         champions=CHAMPIONS,
     )
+
+    clean_target = normalize_champion_name(name)
+    if not clean_target:
+        return JSONResponse(
+            status_code=404,
+            content=ErrorMessage(
+                code=ErrorMessage.CodeConstant.CODE_CHAMPION_NOT_FOUND,
+                message="Champion not found.",
+            ).dict(),
+        )
+
+    # 1. Direct match on guess_result.name
     for guess_result in ranks:
-        if guess_result.name.lower() in [name.lower(), name.replace(" ", "").lower()]:
+        if normalize_champion_name(guess_result.name) == clean_target:
             return guess_result
-    # Also check against name_map
-    matched_eng = None
-    for _, row in CHAMPION_NAME_MAP.iterrows():
-        if str(row['english_name']).lower() == name.lower() or str(row['local_name']).lower() == name.lower():
-            matched_eng = row['english_name']
+
+    # 2. Check against CHAMPIONS dataset columns (name_en, name_ko, alias)
+    matched_index = None
+    for idx, row in CHAMPIONS.iterrows():
+        n_en = normalize_champion_name(row.get('name_en'))
+        n_ko = normalize_champion_name(row.get('name_ko'))
+        n_alias = normalize_champion_name(row.get('alias'))
+        if clean_target in (n_en, n_ko, n_alias) or n_en.startswith(clean_target) or n_alias.startswith(clean_target):
+            matched_index = idx
             break
-    if matched_eng:
+
+    # 3. Check against CHAMPION_NAME_MAP (english_name, local_name)
+    if matched_index is None:
+        for _, row in CHAMPION_NAME_MAP.iterrows():
+            n_eng = normalize_champion_name(row.get('english_name'))
+            n_loc = normalize_champion_name(row.get('local_name'))
+            if clean_target in (n_eng, n_loc):
+                for idx, c_row in CHAMPIONS.iterrows():
+                    if normalize_champion_name(c_row.get('name_en')) == n_eng or normalize_champion_name(c_row.get('alias')) == n_eng:
+                        matched_index = idx
+                        break
+                break
+
+    if matched_index is not None:
+        target_name_en = CHAMPIONS.loc[matched_index].get('name_en') or CHAMPIONS.loc[matched_index].get('alias')
         for guess_result in ranks:
-            if guess_result.name.lower() == matched_eng.lower():
+            if normalize_champion_name(guess_result.name) == normalize_champion_name(target_name_en):
                 return guess_result
+
     return JSONResponse(
         status_code=404,
         content=ErrorMessage(

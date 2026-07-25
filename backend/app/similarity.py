@@ -28,9 +28,11 @@ STAT_DIFF_MAX = {
 def calculate_similarity_detail(champ1, champ2) -> dict:
     """
     Hybrid Weighted Similarity Algorithm.
-    Category Total: 80 pts (7 items, 80/7 pts each)
-    Stat Total: 20 pts (18 items, 20/18 pts each using Min-Max scaling)
-    Total: 1    # Category Total: 80 pts (가중치 맞춤 개편)
+    Category Total: 80 pts
+    Stat Total: 20 pts
+    Total: 100 pts -> normalized to 0.0 ~ 1.0
+    """
+    # Category Total: 80 pts (가중치 맞춤 개편)
     # 1. 소속 지역 (Region): 18점 (최고 비중 버프!)
     # 2. 종족 (Species): 18점 (최고 비중 버프!)
     # 3. 역할군 (Role 1 & 2): 15점 (조합 일치 버프)
