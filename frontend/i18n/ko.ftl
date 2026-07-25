@@ -60,7 +60,19 @@ faq-show-info-title = 챔피언의 상세 정보를 볼 수 있나요?
 faq-show-info-description = 네. 추측한 챔피언을 목록에서 클릭하면 상세 정보가 표시됩니다.
 
 faq-similarity-title = 유사도는 어떻게 계산하나요?
-faq-similarity-description = 챔피언의 속성(소속 지역, 주/보조 역할군, 공격 형태, 자원 유형, 종족, 성별)과 세부 능력치(체력, 마나, 공격력, 방어력, 마법 저항력, 사거리, 이동속도 등 18개 스탯)를 기반으로 유사도를 계산합니다.
+faq-similarity-description = 유사도는 총 100점 만점(카테고리 7종 80점 + 스탯 18종 20점)을 기준으로 산출됩니다:
+  1. 카테고리 (80점 만점):
+  - 소속 지역 (region): 25점 (소속 지역 일치 시 최고 가중치)
+  - 종족 (species): 16점 (부분 일치 시 8점)
+  - 역할군 1·2 (tag_1, tag_2): 14점 (조합 버프)
+  - 자원 유형 (partype): 10점
+  - 공격 방식 (attack_type): 6점
+  - 성별 (gender): 5점
+  - 출시 순서 (champion_id): 4점 (하향 조절)
+  2. 스탯 (20점 만점):
+  - 이동 속도 (movespeed): 4.0점 (파격적 가중치 버프)
+  - 사거리 (attackrange): 4.0점 (파격적 가중치 버프)
+  - 나머지 16개 스탯: 각 0.75점 씩 균등 반영 (총 12.0점)
 
 faq-once-per-day-title = 하루에 한 번 이상 플레이할 수 있나요?
 faq-once-per-day-description = 아니오. 하루에 한 번만 플레이할 수 있습니다.
