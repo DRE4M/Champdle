@@ -57,3 +57,7 @@ class GuessResult(BaseModel):
     name: str = Field(..., example="Annie")
     rank: int = Field(..., example=1)
     similarity: float = Field(..., example=1.0)
+    category_score: Optional[float] = Field(None, example=72.5)
+    stat_score: Optional[float] = Field(None, example=18.2)
+    formula_detail: Optional[str] = Field(None, example="카테고리 72.5점 + 스탯 18.2점")
+

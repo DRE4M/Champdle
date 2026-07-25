@@ -48,6 +48,11 @@
           </button>
         </th>
         <th class="p-2">
+          <span class="font-bold text-xs text-gray-700 dark:text-slate-300">
+            {{ $t("guess-result-header-formula") }}
+          </span>
+        </th>
+        <th class="p-2">
           <button
             class="flex items-center w-full font-bold"
             @click="changeSort('rank')"

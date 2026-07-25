@@ -59,6 +59,9 @@ async function load_data() {
         name: guess_result.name,
         rank: guess_result.rank,
         similarity: guess_result.similarity,
+        category_score: guess_result.category_score,
+        stat_score: guess_result.stat_score,
+        formula_detail: guess_result.formula_detail,
       }
     })
   } catch (e) {

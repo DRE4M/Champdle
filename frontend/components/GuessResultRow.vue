@@ -25,6 +25,17 @@
     >
       {{ (guess_data.similarity * 100).toFixed(3) }}%
     </td>
+    <td class="p-2 text-xs font-mono text-gray-600 dark:text-slate-400 whitespace-nowrap">
+      <span v-if="guess_data.formula_detail" class="px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-700/60 text-[11px]">
+        {{ guess_data.formula_detail }}
+      </span>
+      <span v-else-if="guess_data.category_score !== undefined" class="px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-700/60 text-[11px]">
+        카테고리 {{ guess_data.category_score.toFixed(1) }}점 + 스탯 {{ guess_data.stat_score.toFixed(1) }}점
+      </span>
+      <span v-else class="text-gray-400 text-[11px]">
+        -
+      </span>
+    </td>
     <td
       class="p-2"
       :style="{
@@ -42,7 +53,7 @@
     </td>
   </tr>
   <tr v-if="is_show_champion_info">
-    <td class="p-2" :colspan="is_show_index ? 5 : 4">
+    <td class="p-2" :colspan="is_show_index ? 6 : 5">
       <ChampionInfo v-if="champion" :champion="champion"></ChampionInfo>
     </td>
   </tr>

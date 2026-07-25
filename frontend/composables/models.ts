@@ -45,6 +45,9 @@ interface GuessResult {
   name: string
   rank: number
   similarity: number
+  category_score?: number
+  stat_score?: number
+  formula_detail?: string
 }
 
 interface GuessData {
@@ -52,6 +55,9 @@ interface GuessData {
   name: string
   rank: number
   similarity: number
+  category_score?: number
+  stat_score?: number
+  formula_detail?: string
 }
 
 interface State {

@@ -19,6 +19,7 @@ error-unknown = Unknown error.
 guess-result-header-index = #
 guess-result-header-name = Name
 guess-result-header-similarity = Similarity
+guess-result-header-formula = Breakdown
 guess-result-header-rank = Rank
 
 correct-guess = Found!
