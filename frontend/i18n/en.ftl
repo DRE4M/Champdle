@@ -66,12 +66,13 @@ faq-show-info-description = Yes, click on the Champion you guessed in the list t
 
 faq-similarity-title = How does it calculate the similarity?
 faq-similarity-description = Similarity is calculated on a 100-point total scale (Categories 80 pts + Stats 20 pts) with custom weights:
-  1. Categories (80 pts total / Weighted by rarity):
-  - Region (18 pts) & Species (18 pts): 18 pts each for exact match (9 pts for partial species overlap)
-  - Role (Tag 1 & 2) (15 pts): 15 pts (100%) for exact match, 12 pts (80%) for Tag 1, 10.5 pts (70%) for swapped match, 7.5 pts (50%) for Tag 2
-  - Resource (12 pts): 12 pts for matching resource type (Mana/Energy/No Mana)
-  - Attack Type (7 pts) & Gender (5 pts): 7 pts and 5 pts respectively
-  - Release Order (5 pts): Up to 5 pts scaled linearly by index difference (1 to 173) (Lowered weight)
+  1. Categories (80 pts total / Region heavily buffed):
+  - Region (25 pts): 25 pts for exact match among 14 regions (Highest priority buff)
+  - Species (16 pts): 16 pts for exact match, 8 pts for partial overlap
+  - Role (Tag 1 & 2) (14 pts): 14 pts (100%) for exact match, 11.2 pts (80%) for Tag 1, 9.8 pts (70%) for swapped match, 7 pts (50%) for Tag 2
+  - Resource (10 pts): 10 pts for matching resource type (Mana/Energy/No Mana)
+  - Attack Type (6 pts) & Gender (5 pts): 6 pts and 5 pts respectively
+  - Release Order (4 pts): Up to 4 pts scaled linearly by index difference (1 to 173) (Lowered weight)
   2. Stats (20 pts total / Key stats heavily weighted):
   - High-weight Key Stats: Movespeed (4.0 pts) and Attack Range (4.0 pts) (Total 8.0 pts)
   - Remaining 16 Base Stats: 0.75 pts each (Total 12.0 pts across HP, MP, AD, AS, Armor, MR, Regen).
