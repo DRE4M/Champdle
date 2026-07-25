@@ -18,9 +18,6 @@
         <div class="italic text-xs text-indigo-600 dark:text-indigo-400 font-medium">
           {{ state.locale === 'ko' ? champion.title_ko : champion.title_en }}
         </div>
-        <div class="text-[11px] text-gray-500 dark:text-slate-400 mt-0.5">
-          {{ $t('champion-info-release-order') }}: <span class="font-semibold text-gray-700 dark:text-slate-300">{{ champion.champion_id }}번째</span>
-        </div>
       </div>
     </div>
 
@@ -33,6 +30,9 @@
       </div>
       <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
         <ChampionInfoBlock class="bg-white/80 dark:bg-slate-900/80 border-indigo-100 dark:border-indigo-900/40">
+          <p class="leading-relaxed">
+            <span class="font-semibold text-gray-700 dark:text-slate-300">{{ $t('champion-info-release-order') }}:</span> {{ champion.champion_id }}번째
+          </p>
           <p class="leading-relaxed">
             <span class="font-semibold text-gray-700 dark:text-slate-300">{{ $t('champion-info-region') }}:</span> {{ champion.region || 'None' }}
           </p>
