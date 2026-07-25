@@ -18,7 +18,7 @@
           type="date"
           v-model="selectedDate"
           @change="onDateChange"
-          title="날짜 선택하여 포켓몬 변경"
+          title="날짜 선택하여 챔피언 변경"
           class="rounded py-0.5 px-1.5 text-xs border border-gray-300 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200 shadow-sm cursor-pointer"
         />
       </div>
