@@ -2,7 +2,7 @@ champdle = Champdle
 champdle-index-subtitle = #{$puzzle_number}
 champdle-rank-subtitle = #{$puzzle_number} 전체 순위
 
-og-description = 오늘의 챔피언을 맞춰보세요! 유사도는 카테고리 7종(80점) + 스탯 18종 Min-Max(20점) 총 100점 기준입니다. 훈협지 화이팅!
+og-description = 오늘의 챔피언을 맞춰보세요! 챔피언 이름을 입력하면 정답과 얼마나 비슷한지 알려줍니다.
 
 language-locale-en = English
 language-locale-ko = 한국어
@@ -19,7 +19,6 @@ error-unknown = 알 수 없는 오류입니다.
 guess-result-header-index = #
 guess-result-header-name = 이름
 guess-result-header-similarity = 유사도
-guess-result-header-formula = 계산 구성
 guess-result-header-rank = 순위
 
 correct-guess = 정답!
@@ -61,17 +60,7 @@ faq-show-info-title = 챔피언의 상세 정보를 볼 수 있나요?
 faq-show-info-description = 네. 추측한 챔피언을 목록에서 클릭하면 상세 정보가 표시됩니다.
 
 faq-similarity-title = 유사도는 어떻게 계산하나요?
-faq-similarity-description = 유사도는 총 100점 만점(카테고리 7종 80점 + 스탯 18종 20점)을 기준으로 가중치 산출됩니다:
-  1. 카테고리 항목 (총 80점 만점 / 소속 지역 25점 파격 가중치 반영)
-  - 소속 지역 (25점): 14개 지역 중 희귀 일치 시 25점 부여 (최고 가중치 파격 버프)
-  - 종족 (16점): 완벽 일치 시 16점, 공통 종족 1개 이상 겹치면 절반 8점
-  - 역할군 1·2 (14점): 주/부 순서·종류 완벽 일치 14점(100%), 주역할 11.2점(80%), 주/부 교차 9.8점(70%), 부역할 부분 7점(50%)
-  - 자원 유형 (10점): 마나/기력/노마나 등 일치 시 10점
-  - 공격 방식 (6점) & 성별 (5점): 선택지 수가 적어 각 6점, 5점 반영
-  - 출시 순서 (4점): 1번부터 173번까지 순서 격차(Min-Max) 비율로 최대 4점 반영 (격차 조정 하향)
-  2. 스탯 항목 (총 20점 만점 / 핵심 스탯 가중치 반영)
-  - 핵심 스탯 가중치: 이동속도(4.0점), 사거리(4.0점)에 높은 가중치 부여 (두 항목 총 8.0점)
-  - 기타 스탯: 체력, 마나, 공격력, 방어력, 마저, 재생력 등 나머지 16개 능력치는 각 0.75점씩 반영됩니다 (총 12.0점).
+faq-similarity-description = 챔피언의 속성(소속 지역, 주/보조 역할군, 공격 형태, 자원 유형, 종족, 성별)과 세부 능력치(체력, 마나, 공격력, 방어력, 마법 저항력, 사거리, 이동속도 등 18개 스탯)를 기반으로 유사도를 계산합니다.
 
 faq-once-per-day-title = 하루에 한 번 이상 플레이할 수 있나요?
 faq-once-per-day-description = 아니오. 하루에 한 번만 플레이할 수 있습니다.
@@ -94,24 +83,17 @@ faq-issue-description = {$issue_link}에서 문의해주세요.
 
 go-back-to-main = 메인 페이지로 돌아가기
 
-champion-info-release-order = 출시 순서
 champion-info-resource = 자원
 champion-info-range = 사거리
 champion-info-role-1 = 역할군 1
 champion-info-role-2 = 역할군 2
-champion-info-gender = 성별
-champion-info-species = 종족
-champion-info-region = 소속 지역
-champion-info-attack-type = 공격 방식
-champion-info-hp = 체력 (기본/최대)
-champion-info-mp = 마나 (기본/최대)
-champion-info-hp-regen = 체력 재생 (기본/최대)
-champion-info-mp-regen = 마나 재생 (기본/최대)
+champion-info-hp = 체력
+champion-info-mp = 마나
 champion-info-movespeed = 이동 속도
-champion-info-attack-damage = 공격력 (기본/최대)
-champion-info-attack-speed = 공격 속도 (기본/최대)
-champion-info-armor = 방어력 (기본/최대)
-champion-info-spellblock = 마법 저항력 (기본/최대)
+champion-info-attack-damage = 공격력
+champion-info-attack-speed = 공격 속도
+champion-info-armor = 방어력
+champion-info-spellblock = 마법 저항력
 
 # Champion Names
 
