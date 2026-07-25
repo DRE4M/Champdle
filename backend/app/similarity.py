@@ -32,39 +32,39 @@ def calculate_similarity_detail(champ1, champ2) -> dict:
     Stat Total: 20 pts
     Total: 100 pts -> normalized to 0.0 ~ 1.0
     """
-    # Category Total: 80 pts (소속 지역 25점 파격 버프 적용!)
-    # 1. 소속 지역 (Region): 25점 (소속 지역 일치 시 압도적 점수 버프!)
-    # 2. 종족 (Species): 16점 (종족 일치 16점 / 부분 일치 8점)
-    # 3. 역할군 (Role 1 & 2): 14점 (조합 일치 14점)
-    # 4. 자원 유형 (Resource Partype): 10점
-    # 5. 공격 방식 (Attack Type): 6점 (근/원거리 2종)
-    # 6. 성별 (Gender): 5점 (남/여/기타 3종)
-    # 7. 출시 순서 (Release Order): 4점 (하향 조절)
-    # 합계 = 25 + 16 + 14 + 10 + 6 + 5 + 4 = 80점 만점
+    # Category Total: 80 pts (소속 지역 28점, 종족 14점, 공격방식 4점 등 재조정)
+    # 1. 소속 지역 (Region): 28점
+    # 2. 역할군 (Role 1 & 2): 15점 (완전일치 15점, 주 12점, 교차 10.5점, 부 7.5점)
+    # 3. 종족 (Species): 14점 (완전일치 14점 / 부분일치 7점)
+    # 4. 자원 유형 (Resource Partype): 11점
+    # 5. 공격 방식 (Attack Type): 4점 (근/원거리)
+    # 6. 성별 (Gender): 4점
+    # 7. 출시 순서 (Release Order): 4점
+    # 합계 = 28 + 15 + 14 + 11 + 4 + 4 + 4 = 80점 만점
 
     category_score = 0.0
 
-    # 1. Region (소속 지역 - 25점 파격적 버프!)
+    # 1. Region (소속 지역 - 28점)
     if champ1.get('region') and champ2.get('region') and champ1['region'] == champ2['region']:
-        category_score += 25.0
+        category_score += 28.0
 
-    # 2. Species (종족 - 16점)
+    # 2. Species (종족 - 14점)
     sp1_raw = champ1.get('species') if pd.notna(champ1.get('species')) else None
     sp2_raw = champ2.get('species') if pd.notna(champ2.get('species')) else None
 
     if sp1_raw and sp2_raw:
         if sp1_raw == sp2_raw:
-            # 완전히 동일한 종족 텍스트 -> 만점 (16점)
-            category_score += 16.0
+            # 완전히 동일한 종족 텍스트 -> 만점 (14점)
+            category_score += 14.0
         else:
             # ' / ' 구분자로 분리하여 하나라도 겹치는 종족이 있는지 확인
             set1 = {s.strip().lower() for s in str(sp1_raw).split('/') if s.strip()}
             set2 = {s.strip().lower() for s in str(sp2_raw).split('/') if s.strip()}
             if set1.intersection(set2):
-                # 공통 종족 존재 -> 절반 점수 (8.0점)
-                category_score += 8.0
+                # 공통 종족 존재 -> 절반 점수 (7.0점)
+                category_score += 7.0
 
-    # 3. Role / Tags (주 역할군 tag_1 + 부 역할군 tag_2 고려 - 14점)
+    # 3. Role / Tags (주 역할군 tag_1 + 부 역할군 tag_2 고려 - 15점)
     t1_1 = champ1.get('tag_1') if pd.notna(champ1.get('tag_1')) else None
     t1_2 = champ1.get('tag_2') if pd.notna(champ1.get('tag_2')) else None
     t2_1 = champ2.get('tag_1') if pd.notna(champ2.get('tag_1')) else None
@@ -72,25 +72,25 @@ def calculate_similarity_detail(champ1, champ2) -> dict:
 
     if t1_1 and t2_1:
         if t1_1 == t2_1 and t1_2 == t2_2:
-            category_score += 14.0 * 1.0  # 14점
+            category_score += 15.0 * 1.0  # 15점
         elif t1_1 == t2_1:
-            category_score += 14.0 * 0.8  # 11.2점
+            category_score += 15.0 * 0.8  # 12점
         elif t1_1 == t2_2 and t1_2 == t2_1:
-            category_score += 14.0 * 0.7  # 9.8점
+            category_score += 15.0 * 0.7  # 10.5점
         elif (t1_1 == t2_2 or t1_2 == t2_1 or (t1_2 and t2_2 and t1_2 == t2_2)):
-            category_score += 14.0 * 0.5  # 7점
+            category_score += 15.0 * 0.5  # 7.5점
 
-    # 4. Resource Type (partype: 마나, 기력, 노마나 등 - 10점)
+    # 4. Resource Type (partype: 마나, 기력, 노마나 등 - 11점)
     if champ1.get('partype') and champ2.get('partype') and champ1['partype'] == champ2['partype']:
-        category_score += 10.0
+        category_score += 11.0
 
-    # 5. Attack Type (근거리 / 원거리 - 6점)
+    # 5. Attack Type (근거리 / 원거리 - 4점)
     if champ1.get('attack_type') and champ2.get('attack_type') and champ1['attack_type'] == champ2['attack_type']:
-        category_score += 6.0
+        category_score += 4.0
 
-    # 6. Gender (성별 - 5점)
+    # 6. Gender (성별 - 4점)
     if champ1.get('gender') and champ2.get('gender') and champ1['gender'] == champ2['gender']:
-        category_score += 5.0
+        category_score += 4.0
 
     # 7. Release Order (출시 순서 - 4점)
     try:

@@ -67,17 +67,17 @@ faq-show-info-description = Yes, click on the Champion you guessed in the list t
 faq-similarity-title = How does it calculate the similarity?
 faq-similarity-description = Similarity is calculated on a 100-point total scale (Categories 80 pts + Stats 20 pts):
   1. Categories (80 pts total):
-  - Region (region): 18 pts (Highest weight)
-  - Species (species): 18 pts (Highest weight, 9 pts for partial match)
-  - Role 1 & 2 (tag_1, tag_2): 15 pts (Combo buff)
-  - Resource (partype): 12 pts (Buff)
-  - Attack Type (attack_type): 7 pts
-  - Gender (gender): 5 pts
-  - Release Order (champion_id): 5 pts (Lowered weight)
+  - Region (region): 28 pts (28 pts for exact match)
+  - Role 1 & 2 (tag_1, tag_2): 15 pts (Exact match 15 pts, Primary match 12 pts, Swapped match 10.5 pts, Secondary partial match 7.5 pts)
+  - Species (species): 14 pts (Exact match 14 pts, Partial overlap 7 pts)
+  - Resource (partype): 11 pts (11 pts for exact match)
+  - Attack Type (attack_type): 4 pts (4 pts for Melee/Ranged match)
+  - Gender (gender): 4 pts (4 pts for exact match)
+  - Release Order (champion_id): 4 pts (Up to 4 pts scaled by release index diff)
   2. Stats (20 pts total):
-  - Movespeed (movespeed): 4.0 pts (High-weight buff)
-  - Attack Range (attackrange): 4.0 pts (High-weight buff)
-  - Remaining 16 Stats: 0.75 pts each (Total 12.0 pts)
+  - Movespeed (movespeed): 4.0 pts (Min-Max scaling)
+  - Attack Range (attackrange): 4.0 pts (Min-Max scaling)
+  - Remaining 16 Stats: 0.75 pts each (Min-Max scaling across HP, MP, AD, Armor, MR, etc., total 12.0 pts)
 
 faq-once-per-day-title = Can I play more than once a day?
 faq-once-per-day-description = Unfortunately, you can only play once a day.
