@@ -124,29 +124,65 @@ function copyToClipboard() {
   const url = process.client
     ? window.location.href
     : useRuntimeConfig().public.frontendBase + useRoute().fullPath
-  navigator.clipboard
-    .writeText(
+
+  let textToCopy = ""
+  try {
+    textToCopy =
       fluent.format("share-clipboard-text", {
         puzzle_number: state.puzzle_number,
-        guess_count: state.statistics.last_guess_count,
-        best_rank: state.statistics.last_best_guess.rank,
+        guess_count: state.statistics?.last_guess_count || 1,
+        best_rank: state.statistics?.last_best_guess?.rank || 1,
         best_similarity: (
-          state.statistics.last_best_guess.similarity * 100
+          (state.statistics?.last_best_guess?.similarity || 1.0) * 100
         ).toFixed(2),
       }) +
-        "\n" +
-        url
-    )
-    .then(() => {
+      "\n" +
+      url
+  } catch (e) {
+    textToCopy = `Champdle #${state.puzzle_number} 성공!\n${url}`
+  }
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        alert(fluent.format("share-clipboard-text-alert"))
+      })
+      .catch(() => {
+        fallbackCopyTextToClipboard(textToCopy)
+      })
+  } else {
+    fallbackCopyTextToClipboard(textToCopy)
+  }
+}
+
+function fallbackCopyTextToClipboard(text: string) {
+  const textArea = document.createElement("textarea")
+  textArea.value = text
+  textArea.style.top = "0"
+  textArea.style.left = "0"
+  textArea.style.position = "fixed"
+  textArea.style.opacity = "0"
+  document.body.appendChild(textArea)
+  textArea.focus()
+  textArea.select()
+  try {
+    const successful = document.execCommand("copy")
+    if (successful) {
       alert(fluent.format("share-clipboard-text-alert"))
-    })
+    } else {
+      prompt("결과를 복사해 공유해보세요:", text)
+    }
+  } catch (err) {
+    prompt("결과를 복사해 공유해보세요:", text)
+  }
+  document.body.removeChild(textArea)
 }
 
 function showRankList() {
+  const targetName = state.statistics?.last_correct_guess?.name || ""
   useRouter().push(
-    `/rank/${state.puzzle_number}/${utf8ToB64(
-      state.statistics.last_correct_guess.name
-    )}`
+    `/rank/${state.puzzle_number}/${utf8ToB64(targetName)}`
   )
 }
 </script>
