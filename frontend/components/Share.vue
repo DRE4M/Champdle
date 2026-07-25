@@ -180,9 +180,16 @@ function fallbackCopyTextToClipboard(text: string) {
 }
 
 function showRankList() {
-  const targetName = state.statistics?.last_correct_guess?.name || ""
-  useRouter().push(
-    `/rank/${state.puzzle_number}/${utf8ToB64(targetName)}`
-  )
+  const targetName =
+    state.statistics?.last_correct_guess?.name ||
+    state.statistics?.last_best_guess?.name ||
+    ""
+  if (targetName) {
+    useRouter().push(
+      `/rank/${state.puzzle_number}/${utf8ToB64(targetName)}`
+    )
+  } else {
+    useRouter().push(`/rank/${state.puzzle_number}`)
+  }
 }
 </script>

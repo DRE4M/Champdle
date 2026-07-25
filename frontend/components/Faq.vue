@@ -40,9 +40,13 @@
         >
           <template #yesterday_rank_link="{ yesterdayRankLinkLabel }">
             <NuxtLink
-              :to="`/rank/${state.puzzle_number - 1}/${utf8ToB64(
+              :to="
                 yesterdayName
-              )}`"
+                  ? `/rank/${state.puzzle_number - 1}/${utf8ToB64(
+                      yesterdayName
+                    )}`
+                  : `/rank/${state.puzzle_number - 1}`
+              "
               class="text-blue-600"
               >{{ yesterdayRankLinkLabel }}
             </NuxtLink>
