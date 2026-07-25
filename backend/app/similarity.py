@@ -67,9 +67,21 @@ def calculate_similarity_detail(champ1, champ2) -> dict:
     if champ1.get('partype') and champ2.get('partype') and champ1['partype'] == champ2['partype']:
         category_score += cat_unit_score
 
-    # 5. Species (종족)
-    if champ1.get('species') and champ2.get('species') and champ1['species'] == champ2['species']:
-        category_score += cat_unit_score
+    # 5. Species (종족: 복수 종족 교차 일치 고려)
+    sp1_raw = champ1.get('species') if pd.notna(champ1.get('species')) else None
+    sp2_raw = champ2.get('species') if pd.notna(champ2.get('species')) else None
+
+    if sp1_raw and sp2_raw:
+        if sp1_raw == sp2_raw:
+            # 완전히 동일한 종족 텍스트 -> 만점 (100%)
+            category_score += cat_unit_score * 1.0
+        else:
+            # ' / ' 구분자로 분리하여 하나라도 겹치는 종족이 있는지 확인
+            set1 = {s.strip().lower() for s in str(sp1_raw).split('/') if s.strip()}
+            set2 = {s.strip().lower() for s in str(sp2_raw).split('/') if s.strip()}
+            if set1.intersection(set2):
+                # 공통 종족 존재 (예: Human / Cyborg ↔ Human) -> 절반 점수 (50%)
+                category_score += cat_unit_score * 0.5
 
     # 6. Gender (성별)
     if champ1.get('gender') and champ2.get('gender') and champ1['gender'] == champ2['gender']:

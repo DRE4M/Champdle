@@ -65,7 +65,14 @@ faq-show-info-title = Can I see the details of Champions?
 faq-show-info-description = Yes, click on the Champion you guessed in the list to see the details.
 
 faq-similarity-title = How does it calculate the similarity?
-faq-similarity-description = Similarity is calculated based on the Champion's attributes (region, role, attack type, resource) and detailed base stats.
+faq-similarity-description = Similarity is calculated on a 100-point total scale (Categories 80 pts + Stats 20 pts):
+  1. Categories (80 pts / 7 items, ~11.43 pts each):
+  - Region, Attack Type, Resource, Gender: 100% full points for exact match.
+  - Species: 100% for exact match, 50% for partial match (e.g. Human/Cyborg vs Human).
+  - Role (Tag 1 & 2): 100% for exact match, 80% for Tag 1 match, 70% for swapped match, 50% for Tag 2 partial match.
+  - Release Order: Linear scaling based on release index difference (1 to 173).
+  2. Stats (20 pts / 18 items, ~1.11 pts each):
+  - Min-Max scaling across 18 numerical stats (HP, MP, Range, Movespeed, AD, AS, Armor, MR, Regen).
 
 faq-once-per-day-title = Can I play more than once a day?
 faq-once-per-day-description = Unfortunately, you can only play once a day.
