@@ -32,62 +32,39 @@ def calculate_similarity_detail(champ1, champ2) -> dict:
     Stat Total: 20 pts (18 items, 20/18 pts each using Min-Max scaling)
     Total: 100 pts -> normalized to 0.0 ~ 1.0
     """
+    # Category Total: 80 pts (가중치 차등 적용)
+    # 1. 소속 지역 (Region): 15점 (14개 지역 - 희귀 맞춤 버프)
+    # 2. 종족 (Species): 15점 (다양한 종족 - 희귀 맞춤 버프)
+    # 3. 출시 순서 (Release Order): 14점 (Min-Max 비율 버프)
+    # 4. 역할군 (Role 1 & 2): 12점
+    # 5. 자원 유형 (Resource Partype): 10점
+    # 6. 공격 방식 (Attack Type): 7점 (근/원거리 2종)
+    # 7. 성별 (Gender): 7점 (남/여/기타 3종)
+    # 합계 = 15 + 15 + 14 + 12 + 10 + 7 + 7 = 80점 만점
+
     category_score = 0.0
-    cat_unit_score = 80.0 / 7.0  # ~11.428 pts per category item (7 items total)
 
-    # 1. Region (소속 지역)
+    # 1. Region (소속 지역 - 15점)
     if champ1.get('region') and champ2.get('region') and champ1['region'] == champ2['region']:
-        category_score += cat_unit_score
+        category_score += 15.0
 
-    # 2. Role / Tags (주 역할군 tag_1 + 부 역할군 tag_2 고려)
-    t1_1 = champ1.get('tag_1') if pd.notna(champ1.get('tag_1')) else None
-    t1_2 = champ1.get('tag_2') if pd.notna(champ1.get('tag_2')) else None
-    t2_1 = champ2.get('tag_1') if pd.notna(champ2.get('tag_1')) else None
-    t2_2 = champ2.get('tag_2') if pd.notna(champ2.get('tag_2')) else None
-
-    if t1_1 and t2_1:
-        if t1_1 == t2_1 and t1_2 == t2_2:
-            # 주역할군 & 부역할군 모두 완벽 일치 -> 만점 (100%)
-            category_score += cat_unit_score * 1.0
-        elif t1_1 == t2_1:
-            # 주역할군만 동일 -> 80%
-            category_score += cat_unit_score * 0.8
-        elif t1_1 == t2_2 and t1_2 == t2_1:
-            # 주역할군과 부역할군 교차 완전 일치 -> 70%
-            category_score += cat_unit_score * 0.7
-        elif (t1_1 == t2_2 or t1_2 == t2_1 or (t1_2 and t2_2 and t1_2 == t2_2)):
-            # 부역할군 부분 일치 -> 50%
-            category_score += cat_unit_score * 0.5
-
-    # 3. Attack Type (근거리 / 원거리)
-    if champ1.get('attack_type') and champ2.get('attack_type') and champ1['attack_type'] == champ2['attack_type']:
-        category_score += cat_unit_score
-
-    # 4. Resource Type (partype: 마나, 기력, 노마나 등)
-    if champ1.get('partype') and champ2.get('partype') and champ1['partype'] == champ2['partype']:
-        category_score += cat_unit_score
-
-    # 5. Species (종족: 복수 종족 교차 일치 고려)
+    # 2. Species (종족 - 15점)
     sp1_raw = champ1.get('species') if pd.notna(champ1.get('species')) else None
     sp2_raw = champ2.get('species') if pd.notna(champ2.get('species')) else None
 
     if sp1_raw and sp2_raw:
         if sp1_raw == sp2_raw:
-            # 완전히 동일한 종족 텍스트 -> 만점 (100%)
-            category_score += cat_unit_score * 1.0
+            # 완전히 동일한 종족 텍스트 -> 만점 (15점)
+            category_score += 15.0
         else:
             # ' / ' 구분자로 분리하여 하나라도 겹치는 종족이 있는지 확인
             set1 = {s.strip().lower() for s in str(sp1_raw).split('/') if s.strip()}
             set2 = {s.strip().lower() for s in str(sp2_raw).split('/') if s.strip()}
             if set1.intersection(set2):
-                # 공통 종족 존재 (예: Human / Cyborg ↔ Human) -> 절반 점수 (50%)
-                category_score += cat_unit_score * 0.5
+                # 공통 종족 존재 -> 절반 점수 (7.5점)
+                category_score += 7.5
 
-    # 6. Gender (성별)
-    if champ1.get('gender') and champ2.get('gender') and champ1['gender'] == champ2['gender']:
-        category_score += cat_unit_score
-
-    # 7. Release Order (champion_id min-max)
+    # 3. Release Order (출시 순서 - 14점)
     try:
         id1 = float(champ1.get('champion_id', 0))
         id2 = float(champ2.get('champion_id', 0))
@@ -95,9 +72,37 @@ def calculate_similarity_detail(champ1, champ2) -> dict:
             diff = abs(id1 - id2)
             max_id_diff = 172.0  # Max possible difference (173 - 1)
             ratio = max(0.0, 1.0 - (diff / max_id_diff))
-            category_score += cat_unit_score * ratio
+            category_score += 14.0 * ratio
     except (ValueError, TypeError):
         pass
+
+    # 4. Role / Tags (주 역할군 tag_1 + 부 역할군 tag_2 고려 - 12점)
+    t1_1 = champ1.get('tag_1') if pd.notna(champ1.get('tag_1')) else None
+    t1_2 = champ1.get('tag_2') if pd.notna(champ1.get('tag_2')) else None
+    t2_1 = champ2.get('tag_1') if pd.notna(champ2.get('tag_1')) else None
+    t2_2 = champ2.get('tag_2') if pd.notna(champ2.get('tag_2')) else None
+
+    if t1_1 and t2_1:
+        if t1_1 == t2_1 and t1_2 == t2_2:
+            category_score += 12.0 * 1.0  # 12점
+        elif t1_1 == t2_1:
+            category_score += 12.0 * 0.8  # 9.6점
+        elif t1_1 == t2_2 and t1_2 == t2_1:
+            category_score += 12.0 * 0.7  # 8.4점
+        elif (t1_1 == t2_2 or t1_2 == t2_1 or (t1_2 and t2_2 and t1_2 == t2_2)):
+            category_score += 12.0 * 0.5  # 6점
+
+    # 5. Resource Type (partype: 마나, 기력, 노마나 등 - 10점)
+    if champ1.get('partype') and champ2.get('partype') and champ1['partype'] == champ2['partype']:
+        category_score += 10.0
+
+    # 6. Attack Type (근거리 / 원거리 - 7점)
+    if champ1.get('attack_type') and champ2.get('attack_type') and champ1['attack_type'] == champ2['attack_type']:
+        category_score += 7.0
+
+    # 7. Gender (성별 - 7점)
+    if champ1.get('gender') and champ2.get('gender') and champ1['gender'] == champ2['gender']:
+        category_score += 7.0
 
     # Stat Score (20 pts max across 18 stat columns)
     stat_score = 0.0

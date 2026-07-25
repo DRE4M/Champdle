@@ -65,12 +65,14 @@ faq-show-info-title = Can I see the details of Champions?
 faq-show-info-description = Yes, click on the Champion you guessed in the list to see the details.
 
 faq-similarity-title = How does it calculate the similarity?
-faq-similarity-description = Similarity is calculated on a 100-point total scale (Categories 80 pts + Stats 20 pts):
-  1. Categories (80 pts / 7 items, ~11.43 pts each):
-  - Region, Attack Type, Resource, Gender: 100% full points for exact match.
-  - Species: 100% for exact match, 50% for partial match (e.g. Human/Cyborg vs Human).
-  - Role (Tag 1 & 2): 100% for exact match, 80% for Tag 1 match, 70% for swapped match, 50% for Tag 2 partial match.
-  - Release Order: Linear scaling based on release index difference (1 to 173).
+faq-similarity-description = Similarity is calculated on a 100-point total scale (Categories 80 pts + Stats 20 pts) with weighted category rarity:
+  1. Categories (80 pts total / Weighted by rarity):
+  - Region (15 pts): 15 pts for exact match among 14 regions (Rarest match buff)
+  - Species (15 pts): 15 pts for exact match, 7.5 pts for partial overlap (Rarest match buff)
+  - Release Order (14 pts): Up to 14 pts scaled linearly by index difference (1 to 173)
+  - Role (Tag 1 & 2) (12 pts): 12 pts (100%) for exact match, 9.6 pts (80%) for Tag 1, 8.4 pts (70%) for swapped match, 6 pts (50%) for Tag 2 partial match
+  - Resource (10 pts): 10 pts for matching resource type (Mana/Energy/No Mana)
+  - Attack Type (7 pts) & Gender (7 pts): 7 pts each (Fewer options)
   2. Stats (20 pts / 18 items, ~1.11 pts each):
   - Min-Max scaling across 18 numerical stats (HP, MP, Range, Movespeed, AD, AS, Armor, MR, Regen).
 
